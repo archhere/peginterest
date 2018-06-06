@@ -1,4 +1,5 @@
 import { RECEIVE_CURRENT_USER} from '../actions/session_actions';
+import merge from 'lodash/merge';
 
 const usersReducer = (state={},action) => {
   switch (action.type) {

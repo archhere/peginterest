@@ -8,7 +8,7 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   after_initialize :ensure_session_token
-  # before_validation :ensure_username
+  after_initialize :ensure_others
 
   has_many :reviews,
     foreign_key: :author_id
@@ -18,11 +18,12 @@ class User < ApplicationRecord
     through: :favorites,
     source: :bench
 
-  # def ensure_username
-  #   email = self.email
-  #   temp_user = self.username
-  #   self.username = self.username || self.email[0...email.index("@")]
-  # end
+  def ensure_others
+    self.username ||= self.email[0...(self.email.index("@") || (self.email.length-1))]
+    self.firstname ||= self.username
+    self.lastname ||= self.username
+    self.image_url ||= "https://s33.postimg.cc/poqcph5kv/avatar-1577909_1280.png"
+  end
 
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)
@@ -40,7 +41,7 @@ class User < ApplicationRecord
   end
 
   def reset_session_token!
-    generate_unique_session_token
+    SecureRandom.urlsafe_base64
     save!
     self.session_token
   end
@@ -48,19 +49,12 @@ class User < ApplicationRecord
   private
 
   def ensure_session_token
-    generate_unique_session_token unless self.session_token
+    self.session_token ||= SecureRandom.urlsafe_base64
   end
 
   def new_session_token
     SecureRandom.urlsafe_base64
   end
 
-  def generate_unique_session_token
-    self.session_token = new_session_token
-    while User.find_by(session_token: self.session_token)
-      self.session_token = new_session_token
-    end
-    self.session_token
-  end
 
 end
