@@ -10,13 +10,13 @@ class User < ApplicationRecord
   after_initialize :ensure_session_token
   after_initialize :ensure_others
 
-  has_many :reviews,
-    foreign_key: :author_id
+  has_many(
+    :boards,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Board
+  )
 
-  has_many :favorites
-  has_many :favorite_benches,
-    through: :favorites,
-    source: :bench
 
   def ensure_others
     self.username ||= self.email[0...(self.email.index("@") || (self.email.length-1))]

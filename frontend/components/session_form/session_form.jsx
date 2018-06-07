@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { login } from '../../actions/session_actions';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class SessionForm extends React.Component {
       password: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.demoLogin = this.demoLogin.bind(this);
   }
 
   componentWillReceiveProps(){
@@ -34,8 +36,26 @@ class SessionForm extends React.Component {
 
   demoLogin(e){
     e.preventDefault();
-    this.props.processForm({email: "demo@gmail.com",password: "password"})
-    .then(()=>this.props.history.push('/'));
+      let password = "password";
+      const newdemo = () => {
+        setTimeout(() => {
+          if (password.length>0){
+            this.setState({
+                email:"frodo@shire.com",
+                password: this.state.password.concat(password[0])
+            });
+            password = password.slice(1);
+            newdemo();
+          }
+          else{
+            dispatch(login(this.state))
+            .then(()=>this.props.history.push('/'));
+          }
+        }, 100);
+
+      };
+      newdemo();
+
 }
 
   renderErrors() {
@@ -81,7 +101,7 @@ class SessionForm extends React.Component {
             <input className="session-submit" type="submit" value="Continue" />
             <br/>
           </div>
-           <input className="demo-submit" onClick={this.demoLogin.bind(this)} type="submit" value="Demo"/>
+           <input className="demo-submit" onClick={(e)=>this.demoLogin(e)} type="submit" value="Demo"/>
            <br/>
          <div className='fromtype-button'>{this.props.navLink}</div>
         </form>
