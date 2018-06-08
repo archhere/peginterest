@@ -13,14 +13,30 @@
 .search i{
   position: relative;
   bottom: 2%;
-  right: 77%;
+  right: 1000px;
   color:lightgray;
 }
+
+.nav_link{
+  position: relative;
+  right: 10px;
+}
+
+.profile-link {
+  display: inline;
+  position: relative;
+  right: 50px;
+}
+
+.profile-link:hover{
+  background: #f1f1f1;
+  border: 1px solid white;
+}
+
 
 .userimg i{
   position: relative;
   bottom: 2%;
-  right: 7%;
   color:lightgray;
   color: #3477e5;
   background-color: #b0c9f2;
@@ -28,8 +44,18 @@
   border-radius: 100%;
 }
 
+.userimg img{
+  position: relative;
+  background: #f1f1f1;
+  /* border: 1px solid lightgray; */
+  border-radius: 100%;
+}
+
 .header-button{
   color: black;
+  position: relative;
+  bottom: 38px;
+  left: 1250px;
   /* margin-left: 43%; */
   font-size: 15px;
   font-family: sans-serif;
@@ -65,5 +91,5 @@
   left: 0px;
   height: 40px;
   width: 40px;
-  top:35%;
+  top:16px;
 }

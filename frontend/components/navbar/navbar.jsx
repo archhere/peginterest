@@ -11,17 +11,32 @@ const navBar = ({currentUser, logout}) => {
     </div>
   );
   const nav = () => (
+
+
     <hgroup className="header-group">
       <ul>
-        <li><img src={window.logo}/></li>
+        <li><Link to="/"><img src={window.logo}/></Link></li>
         <li><input type="text" className="searchbar" placeholder="Search"/></li>
         <li className="search"><i className="fas fa-search"></i></li>
-        <li><Link className="nav_link" to={'/'}>Profile</Link></li>
-        <li className="userimg"><i className="fas fa-user"></i></li>
-        <li>{currentUser.username}</li>
-        <li><button className="header-button" onClick={()=>logout()}>Log Out</button></li>
+        <li>
+          <ul className="profile-link">
+          {(currentUser.image_url === null) ?
+            <li className="userimg"><i className="fas fa-user"></i></li> :
+            <li className="userimg"><img src={currentUser.image_url}/></li>
+          }
+
+        <li><Link className="nav_link" to={'/'}>
+          {currentUser.username[0].toUpperCase()+currentUser.username.slice(1)}
+            </Link>
+        </li>
+        </ul>
+      </li>
+
+        <li><button className="header-button"
+          onClick={()=>logout()}>Log Out</button></li>
+
       </ul>
-      
+
     </hgroup>
   );
 

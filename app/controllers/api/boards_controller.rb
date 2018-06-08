@@ -1,6 +1,6 @@
-class Api::BoardController < ApplicationController
+class Api::BoardsController < ApplicationController
   before_action :require_login
-  
+
     def new
       @board = Board.new
     end
@@ -31,7 +31,7 @@ class Api::BoardController < ApplicationController
   end
 
   def index
-    @board = Board.all
+    @boards = Board.all
   end
 
   def show

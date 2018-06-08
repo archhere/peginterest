@@ -1,0 +1,2 @@
+class Peg < ApplicationRecord
+end

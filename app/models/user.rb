@@ -22,7 +22,7 @@ class User < ApplicationRecord
     self.username ||= self.email[0...(self.email.index("@") || (self.email.length-1))]
     self.firstname ||= self.username
     self.lastname ||= self.username
-    self.image_url ||= "https://s33.postimg.cc/poqcph5kv/avatar-1577909_1280.png"
+    self.image_url ||= "https://s33.postimg.cc/pjju7pp9b/shire.jpg"
   end
 
   def self.find_by_credentials(email, password)
