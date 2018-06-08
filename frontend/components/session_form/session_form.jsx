@@ -21,11 +21,12 @@ class SessionForm extends React.Component {
     return e => this.setState({
       [field]: e.target.value
     });
+    // this.clearErrors
   }
 
-  // componentWillUnmount() {
-  //   this.clearErrors();
-  // }
+  componentWillUnmount() {
+    this.props.clearErrors();
+  }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -81,7 +82,6 @@ class SessionForm extends React.Component {
           <p> Welcome to Peginterest <br/>
           <span>Explore new ideas</span></p>
 
-            {this.renderErrors()}
           <div className="login-form">
 
               <input type="text"
@@ -105,6 +105,7 @@ class SessionForm extends React.Component {
            <br/>
          <div className='fromtype-button'>{this.props.navLink}</div>
         </form>
+        <div class="errors">{this.renderErrors()}</div>
       </div>
     );
   }

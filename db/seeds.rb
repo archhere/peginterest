@@ -15,7 +15,13 @@ d = User.create(email: "galadriel@goldenwood.com",password: "password",firstname
 
 
 Board.destroy_all
-Board.create(title: "The splendor of Rivendell",description: "Being immortal, Elves will continue to live in the world until its completion.",author_id: d.id)
-Board.create(title: "The amazing Shire",description: "Hobbits are the unusual creatures who live in Shire",author_id: b.id)
-Board.create(title: "The darkness at Misty Mountains",description: "If you never want to live in a sunless zone and get scaly and amazing like me, come here. Plz bring the ring",author_id: c.id)
-Board.create(title: "Places to hide from the ring wraits",description: "Be sure to bring Sam Gangee along. He can be handy when things go wrong.",author_id: a.id)
+j=Board.create(title: "The splendor of Rivendell",description: "Being immortal, Elves will continue to live in the world until its completion.",author_id: d.id)
+k=Board.create(title: "The amazing Shire",description: "We are the lucky Hobbits who live in Shire",author_id: a.id)
+l=Board.create(title: "The darkness at Misty Mountains",description: "If you never want to live in a sunless zone and get scaly and amazing like me, come here. Plz bring the ring",author_id: c.id)
+m=Board.create(title: "Places to hide from the ring wraits",description: "Be sure to bring Sam Gangee along. He can be handy when things go wrong.",author_id: a.id)
+
+
+Peg.destroy_all
+Peg.create(title:"My home",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465262/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-1.jpg")
+Peg.create(title:"Our meadows",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465295/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-3.jpg")
+Peg.create(title:"What a beautiful view!",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465304/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-4.jpg")

@@ -1,3 +1,19 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :bigint(8)        not null, primary key
+#  username        :string           not null
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  firstname       :string
+#  lastname        :string
+#  email           :string           not null
+#  image_url       :string
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ApplicationRecord
 
   attr_reader :password
@@ -15,6 +31,14 @@ class User < ApplicationRecord
     primary_key: :id,
     foreign_key: :author_id,
     class_name: :Board
+  )
+
+
+  has_many(
+    :pegs,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Peg
   )
 
 

@@ -28,8 +28,12 @@ ActiveRecord::Schema.define(version: 20180608000758) do
 
   create_table "pegs", force: :cascade do |t|
     t.string "title", null: false
+    t.text "description"
     t.integer "author_id", null: false
     t.integer "board_id", null: false
+    t.string "url"
+    t.string "image_url", null: false
+    t.string "image_file_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_pegs_on_author_id"

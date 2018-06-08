@@ -20,11 +20,10 @@ const App = () => (
   <div>
 
     <Switch>
-      <Route exact path='/' component={NavBarContainer}/>
-
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-
+      <Route exact path='/' component={NavBarContainer}/>
+      <Route path='/' component={NavBarContainer}/>
     </Switch>
   </div>
 );
