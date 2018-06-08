@@ -18,7 +18,7 @@ class Peg < ApplicationRecord
 
   validates :title,:image_url,:author_id,:board_id,presence: true
 
-
+  after_initialize :ensure_others
   # need validation for document uploading
 
   belongs_to(
@@ -41,4 +41,13 @@ class Peg < ApplicationRecord
  # has_one :author,
  #   through: :board,
  #   source: :author
+
+
+  def ensure_others
+   self.description ||= self.title
+   self.url ||= "http://www.google.com"
+   self.image_url ||= "https://s33.postimg.cc/pjju7pp9b/shire.jpg"
+  end
+
+
 end

@@ -25,3 +25,8 @@ Peg.destroy_all
 Peg.create(title:"My home",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465262/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-1.jpg")
 Peg.create(title:"Our meadows",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465295/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-3.jpg")
 Peg.create(title:"What a beautiful view!",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465304/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-4.jpg")
+Peg.create(title:"I love this",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528482537/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/jeffrey-workman-19042-unsplash.jpg")
+Peg.create(title:"This is heaven on earth",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528482367/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/keghan-crossland-42934-unsplash.jpg")
+Peg.create(title:"Autumn blossom",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528482466/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/anton-darius-thesollers-424266-unsplash.jpg")
+Peg.create(title:"Delicious fish here",author_id:c.id,board_id:l.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528483977/misty_mountain/anthony-delanoix-21383-unsplash.jpg")
+Peg.create(title:"I live right here",author_id:c.id,board_id:l.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528483852/misty_mountain/philippe-toupet-320689-unsplash.jpg")

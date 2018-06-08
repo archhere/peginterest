@@ -36,7 +36,7 @@ const navBar = ({currentUser, logout}) => {
           onClick={()=>logout()}>Log Out</button></li>
 
       </ul>
-
+      
     </hgroup>
   );
 

@@ -1,7 +1,10 @@
 class Api::PegsController < ApplicationController
 
   def index
+
     @pegs = Peg.all
+    @boards = @pegs.map {|peg| peg.board}
+
     render 'api/pegs/index'
   end
 
@@ -36,7 +39,7 @@ class Api::PegsController < ApplicationController
         render json: @peg.errors.full_messages, status: 422
       end
     else
-      render json: ["You do not have permission to update this peg"]
+      render json: ["You do not have permission to update this peg"],status: 401
     end
   end
 
