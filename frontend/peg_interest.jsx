@@ -1,12 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import configureStore from './store/store.js'
-import Root from './components/root'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import configureStore from './store/store.js';
+import Root from './components/root';
 // import { login,logout,signup } from './util/session_api_util'
+import * as pegAPIUtil from './util/peg_api_util';
+
 
 document.addEventListener('DOMContentLoaded',()=>{
   // window.login = login;
   // window.logout = logout;
+  // window.fetchAllPegs = pegAPIUtil.fetchAllPegs;
+  // window.fetchone = pegAPIUtil.fetchSinglePeg;
+
   let store;
   if (window.currentUser) {
     const preloadedState = {
@@ -24,5 +29,5 @@ document.addEventListener('DOMContentLoaded',()=>{
   window.dispatch = store.dispatch;
 
 
-  ReactDOM.render(<Root store={ store }/>,document.getElementById("root"))
-})
+  ReactDOM.render(<Root store={ store }/>,document.getElementById("root"));
+});

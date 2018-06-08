@@ -13,15 +13,12 @@ class SessionForm extends React.Component {
     this.demoLogin = this.demoLogin.bind(this);
   }
 
-  componentWillReceiveProps(){
-    console.log("called");
-  }
 
   update(field) {
     return e => this.setState({
       [field]: e.target.value
     });
-    // this.clearErrors
+    
   }
 
   componentWillUnmount() {
@@ -105,7 +102,7 @@ class SessionForm extends React.Component {
            <br/>
          <div className='fromtype-button'>{this.props.navLink}</div>
         </form>
-        <div class="errors">{this.renderErrors()}</div>
+        <div className="errors">{this.renderErrors()}</div>
       </div>
     );
   }
