@@ -18,7 +18,7 @@ class SessionForm extends React.Component {
     return e => this.setState({
       [field]: e.target.value
     });
-    
+
   }
 
   componentWillUnmount() {
@@ -98,7 +98,8 @@ class SessionForm extends React.Component {
             <input className="session-submit" type="submit" value="Continue" />
             <br/>
           </div>
-           <input className="demo-submit" onClick={(e)=>this.demoLogin(e)} type="submit" value="Demo"/>
+           <input className="demo-submit"
+             onClick={(e)=>this.demoLogin(e)} type="submit" value="Demo"/>
            <br/>
          <div className='fromtype-button'>{this.props.navLink}</div>
         </form>

@@ -19,6 +19,7 @@ j=Board.create(title: "The splendor of Rivendell",description: "Being immortal, 
 k=Board.create(title: "The amazing Shire",description: "We are the lucky Hobbits who live in Shire",author_id: a.id)
 l=Board.create(title: "The darkness at Misty Mountains",description: "If you never want to live in a sunless zone and get scaly and amazing like me, come here. Plz bring the ring",author_id: c.id)
 m=Board.create(title: "Places to hide from the ring wraits",description: "Be sure to bring Sam Gangee along. He can be handy when things go wrong.",author_id: a.id)
+n=Board.create(title: "All my lovely experiences",description: "Evil exists in this world, but it is nonetheless a beautiful world.Savor it.",author_id: b.id)
 
 
 Peg.destroy_all
@@ -30,3 +31,8 @@ Peg.create(title:"This is heaven on earth",author_id:d.id,board_id:j.id,image_ur
 Peg.create(title:"Autumn blossom",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528482466/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/anton-darius-thesollers-424266-unsplash.jpg")
 Peg.create(title:"Delicious fish here",author_id:c.id,board_id:l.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528483977/misty_mountain/anthony-delanoix-21383-unsplash.jpg")
 Peg.create(title:"I live right here",author_id:c.id,board_id:l.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528483852/misty_mountain/philippe-toupet-320689-unsplash.jpg")
+Peg.create(title:"The prittiest river i have seen",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528553619/gandalf/leo-rivas-25956-unsplash.jpg")
+Peg.create(title:"My lovely horses",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528554068/gandalf/raphael-wicker-94290-unsplash.jpg")
+Peg.create(title:"This is a typical hobbit breakfast",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528553763/gandalf/luke-michael-27050-unsplash.jpg")
+Peg.create(title:"I took this in Sam Gangee's backyard.He is so lucky to live here",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528553653/gandalf/joey-kyber-91823-unsplash.jpg")
+Peg.create(title:"My secret cabin",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528553582/gandalf/luca-bravo-121932-unsplash.jpg")

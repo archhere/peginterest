@@ -1,3 +1,20 @@
 // Place all the styles related to the pegs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.create-item-container {
+  background: #fcfcfc;
+  max-width: 500px;
+  margin: 30px;
+  // height: 660px;
+  // border-radius: 10px;
+  // form {
+  //   position: relative;
+  // }
+}
+
+.create-item-container li img{
+  width: 500px;
+}
+.create-item-container li{
+  list-style-type: none;
+}

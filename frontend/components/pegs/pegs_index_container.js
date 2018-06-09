@@ -3,9 +3,9 @@ import PegsIndex from './pegs_index';
 import { requestAllPegs, clearPegErrors } from './../../actions/peg_actions';
 
 const mapStateToProps = (state) => {
-  return {
-    pegs: Object.values(state.pins)
-  };
+  return ({
+    pegs: Object.values(state.entities.pegs) || []
+  });
 };
 
 const mapDispatchToProps = dispatch => {
