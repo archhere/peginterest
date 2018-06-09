@@ -2,7 +2,8 @@
   border-bottom: 1px solid lightgray;
   display: flex;
   box-sizing: border-box;
-  margin: 0 ;
+  margin: 20px;
+  width:inherit;
 }
 
 .header-group ul li{
@@ -12,9 +13,26 @@
 
 .search i{
   position: relative;
-  bottom: 2%;
-  right: 1000px;
+  bottom: 0px;
+  right: 900px;
   color:lightgray;
+}
+
+.searchbar{
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    position: relative;
+    padding: 0 40px 0 52px;
+    width: 900px;
+    bottom: 1px;
+    left: 10px;
+    text-transform: none;
 }
 
 .nav_link{
@@ -25,7 +43,8 @@
 .profile-link {
   display: inline;
   position: relative;
-  right: 50px;
+  right: 20px;
+  top: 0px;
 }
 
 .profile-link:hover{
@@ -54,8 +73,8 @@
 .header-button{
   color: black;
   position: relative;
-  bottom: 38px;
-  left: 1250px;
+  bottom: 0px;
+  right: 30px;
   /* margin-left: 43%; */
   font-size: 15px;
   font-family: sans-serif;
@@ -71,20 +90,7 @@
   text-decoration: none;
 }
 
-.searchbar{
-    background-color: #f1f1f1;
-    border: 1px solid #f1f1f1;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: #555;
-    font-size: 16px;
-    font-weight: 600;
-    height: 40px;
-    position: relative;
-    padding: 0 40px 0 52px;
-    width: 992px;
-    text-transform: none;
-}
+
 
 .header-group ul li img{
   position:relative;

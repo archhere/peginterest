@@ -24,10 +24,13 @@ n=Board.create(title: "All my lovely experiences",description: "Evil exists in t
 
 Peg.destroy_all
 Peg.create(title:"My home",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465262/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-1.jpg")
+Peg.create(title:"The most delicious oranges from Bilbo's garden",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528587113/random%20pics%20for%20dashboard/rawpixel-597446-unsplash.jpg")
+Peg.create(title:"I love sleeping here",author_id:c.id,board_id:l.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528586939/random%20pics%20for%20dashboard/milos-prelevic-508498-unsplash.jpg")
 Peg.create(title:"Our meadows",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465295/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-3.jpg")
 Peg.create(title:"What a beautiful view!",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528465304/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/shire-4.jpg")
 Peg.create(title:"I love this",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528482537/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/jeffrey-workman-19042-unsplash.jpg")
 Peg.create(title:"This is heaven on earth",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528482367/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/keghan-crossland-42934-unsplash.jpg")
+Peg.create(title:"I love sunsets",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528586800/random%20pics%20for%20dashboard/anton-repponen-99530-unsplash.jpg")
 Peg.create(title:"Autumn blossom",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528482466/profile_pics/board%20-%20splendor%20of%20Rivendell/board-shire/anton-darius-thesollers-424266-unsplash.jpg")
 Peg.create(title:"Delicious fish here",author_id:c.id,board_id:l.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528483977/misty_mountain/anthony-delanoix-21383-unsplash.jpg")
 Peg.create(title:"I live right here",author_id:c.id,board_id:l.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528483852/misty_mountain/philippe-toupet-320689-unsplash.jpg")
@@ -36,3 +39,9 @@ Peg.create(title:"My lovely horses",author_id:b.id,board_id:n.id,image_url:"http
 Peg.create(title:"This is a typical hobbit breakfast",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528553763/gandalf/luke-michael-27050-unsplash.jpg")
 Peg.create(title:"I took this in Sam Gangee's backyard.He is so lucky to live here",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528553653/gandalf/joey-kyber-91823-unsplash.jpg")
 Peg.create(title:"My secret cabin",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528553582/gandalf/luca-bravo-121932-unsplash.jpg")
+Peg.create(title:"Best things on earth",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528587100/random%20pics%20for%20dashboard/sergey-shmidt-229811-unsplash.jpg")
+Peg.create(title:"Flowers in my garden",author_id:a.id,board_id:k.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528587142/random%20pics%20for%20dashboard/candice-seplow-154043-unsplash.jpg")
+Peg.create(title:"My pet butterfly",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528587152/random%20pics%20for%20dashboard/boris-smokrovic-145963-unsplash.jpg")
+Peg.create(title:"Who woke me up now?",author_id:c.id,board_id:l.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528586978/random%20pics%20for%20dashboard/saffu-201118-unsplash.jpg")
+Peg.create(title:"I created this field",author_id:d.id,board_id:j.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528586887/random%20pics%20for%20dashboard/scott-goodwill-359328-unsplash.jpg")
+Peg.create(title:"Off to a new adventure",author_id:b.id,board_id:n.id,image_url:"https://res.cloudinary.com/archhere/image/upload/v1528587126/random%20pics%20for%20dashboard/jeremy-bishop-184462-unsplash.jpg")

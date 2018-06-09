@@ -4,7 +4,8 @@ import { requestAllPegs, clearPegErrors } from './../../actions/peg_actions';
 
 const mapStateToProps = (state) => {
   return ({
-    pegs: Object.values(state.entities.pegs) || []
+    pegs: Object.values(state.entities.pegs) || [],
+    brakePoints: [350, 500, 750]
   });
 };
 

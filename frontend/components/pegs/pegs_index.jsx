@@ -8,33 +8,40 @@ import MasonryLayout from 'react-masonry-layout';
 class PegsIndex extends React.Component {
   constructor (props) {
     super(props);
-    this.state = {
-      perPage: 1,
-      items: Array(4).fill()
-    };
 
 
-    let loadItems = () => {
-        this.setState({
-          items: this.state.items.concat(Array(this.state.perPage).fill())
-        });
-    };
+
   }
   componentDidMount(){
     this.props.requestAllPegs();
   }
 
   render(){
+    let masonryOptions = {
+      transitionDuration: 1,
+      gutter: 10,
+      
+    };
+
     return <ul class='create-item-container'>
-      <MasonryLayout
-          id="masonry-layout"
-          infiniteScroll={this.loadItems}>
+      <Masonry className={"pegs-index"}
+            elementType={'ul'}
+            options={masonryOptions}
+            disableImagesLoaded={false}
+            updateOnEachImageLoad={false}
+            >
 
         {this.props.pegs.map(peg=>
-          <li><img src={peg.image_url}
-            /></li>
-          )}
-      </MasonryLayout>
+          <li>
+            <div>
+              <img src={peg.image_url}/>
+              <span>{peg.title}</span>
+            </div>
+
+      </li>
+
+        )}
+      </Masonry>
     </ul>;
   }
 
