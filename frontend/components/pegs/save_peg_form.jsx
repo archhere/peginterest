@@ -16,8 +16,11 @@ class SavePegForm extends React.Component {
     // console.log("state",this.state);
   }
 
-
-
+  handleclick(val){
+    return (e)=>{
+      this.setState({board_id: val});
+    };
+  }
 
 
   componentDidUpdate() {
@@ -25,7 +28,6 @@ class SavePegForm extends React.Component {
     console.log(peg);
     this.props.createPeg(peg).then(() => this.props.closeModal());
   }
-
 
 
   render(){
@@ -37,7 +39,7 @@ class SavePegForm extends React.Component {
           {boards.map(board=>
             <li>
             <input type="submit" value={board.title}
-              onClick={ () => { this.setState({board_id: board.id}) } }/>
+              onClick={this.handleclick(board.id)}/>
             </li>
           )}
         </ul>
