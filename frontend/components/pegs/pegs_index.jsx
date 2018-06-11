@@ -14,7 +14,6 @@ class PegsIndex extends React.Component {
   }
   componentDidMount(){
     this.props.requestAllPegs();
-
   }
 
   render(){
