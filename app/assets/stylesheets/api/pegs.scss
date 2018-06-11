@@ -1,0 +1,189 @@
+// Place all the styles related to the pegs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.create-peg-container li img{
+  width: 236px;
+  max-height: 500px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.create-peg-container li:hover {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  background-size: 110% 110%;
+  cursor: zoom-in;
+  box-shadow: 0 0 0px 5px #f1f1f1;
+}
+
+.masonry{
+  width: 236px;
+}
+
+.create-peg-container li span{
+  font-family: 'Roboto';
+  color: #555;
+}
+
+
+#thumbtack {
+background-color: #bd081c;
+background-size: contain;
+box-shadow: 0 0 0px 10px #bd081c;
+color: #efefef;
+font-size: 14px;
+width: 20px;
+height: 10px;
+position: relative;
+left: 200px;
+top: 50px;
+opacity: 0;
+// visibility: hidden;
+}
+
+#thumbtack:hover{
+  opacity: 1;
+}
+
+.save{
+  display: inline;
+}
+
+
+.create-peg-container li{
+  list-style-type: none;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:block;
+  width : 300px;
+}
+
+
+.pegs-index{
+  display: grid;
+  // width: 100px;
+}
+
+.peg-show{
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  padding-right: 40px;
+  background: white;
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  height: 650px;
+  width: 40%;
+  text-overflow:clip;
+  font-family: Helvetica, sans-serif;
+}
+
+.peg-show li{
+  list-style-type: none;
+  position: absolute;
+  word-wrap: break-word;
+  // left: 50px;
+}
+
+.title{
+  top: 20px;
+  // text-align: center;
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+    font-size: 21px;
+    letter-spacing: -.3px;
+    line-height: 23px;
+    word-spacing: -1.3px;
+    font-weight: 700;
+}
+.author{
+  top: 600px;
+  left: 60px;
+  word-wrap: break-word;
+  font-family: Helvetica;
+  color: #211922;
+  left: 100px;
+
+}
+
+
+
+.author span{
+  font-weight: 700;
+}
+
+.peg-show li img{
+  height: 500px;
+  width: 558px;
+  position: absolute;
+  left: -70;
+  top: 70px;
+  border-radius: 25px;
+  border: 2px solid white;
+}
+
+.divshow{
+  background: #EEEEEE;
+  height: 100%;
+
+}
+
+.link{
+  position: absolute;
+  bottom: 500px;
+  left: 200px;
+  font-family: 'Roboto' ;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  font-size: 18px;
+}
+
+.link:hover{
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 0px 5px lightgray;
+  border-radius: 15px;
+  background-size: 120% 120%;
+}
+
+.link Link{
+  color: #555;
+  font-family: 'Roboto';
+}
+
+.savebutton{
+  height: 43px;
+  position: relative;
+  width: 80.64px;
+  left: 800px;
+  top: 110px;
+  z-index: 7;
+}
+
+.addItem {
+  position: fixed;
+  z-index: 5;
+  float: right;
+  bottom: 50px;
+  right: 50px;
+  width: 39px;
+  height: 39px;
+  img {
+    cursor: pointer;
+  }
+}
+
+.addItem:hover {
+  filter: brightness(90%);
+}

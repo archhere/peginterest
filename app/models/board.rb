@@ -12,6 +12,7 @@
 
 class Board < ApplicationRecord
   validates :title, :author_id, presence: true
+  validates :title,uniqueness: {scope: :author_id,message: "Try a different board name (you've already got one like this)"}
 
   has_many(
     :pegs,

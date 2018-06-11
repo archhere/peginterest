@@ -49,7 +49,16 @@
 
 .profile-link:hover{
   background: #f1f1f1;
-  border: 1px solid white;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 0 0px 10px #f1f1f1;
+  border-radius: 25px;
+}
+
+.header-button:hover{
+  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 0 0px 5px #f1f1f1;
+  border-radius: 25px;
 }
 
 
@@ -71,7 +80,7 @@
 }
 
 .header-button{
-  color: black;
+  color: #555;
   position: relative;
   bottom: 0px;
   right: 30px;

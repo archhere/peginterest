@@ -1,11 +1,13 @@
 import { connect } from 'react-redux';
 import PegsIndex from './pegs_index';
 import { requestAllPegs, clearPegErrors } from './../../actions/peg_actions';
+import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = (state) => {
   return ({
     pegs: Object.values(state.entities.pegs) || [],
-    brakePoints: [350, 500, 750]
+    currentUser: state.entities.users[state.session.id]
+
   });
 };
 
