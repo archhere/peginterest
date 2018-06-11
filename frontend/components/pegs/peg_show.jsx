@@ -23,10 +23,10 @@ class PegShow extends React.Component{
 
 
       <div className="divshow">
-          <button
-            onClick={() => this.props.openModal({modal: 'SavePeg', peg: this.props.peg} )}>
+        <div
+          onClick={() => this.props.openModal({modal: 'SavePeg', peg: this.props.peg} )}>
           <img src={window.savebutton} className="savebutton"/>
-          </button>
+        </div>  
           <ul className="peg-show">
             <li className="title">{this.props.peg.title}</li>
             <li><img src={this.props.peg.image_url}/></li>

@@ -2,6 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.saveform{
+  // background: red;
+  width: 600px;
+  height: 660px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  background: white;
+}
+
+.saveform li{
+  list-style-type: none;
+  display: inline;
+}
+
+.saveform h3{
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+    font-size: 21px;
+    letter-spacing: -.3px;
+    line-height: 23px;
+    word-spacing: -1.3px;
+    font-weight: 700;
+}
+
+.saveform button{
+  left: 20px;
+}
+
+.saveform img{
+  height: 400px;
+  width: 258px;
+  position: absolute;
+  right: 260px;
+  top: 150px;
+  border-radius: 25px;
+  border: 2px solid white;
+}
+
 
 .create-peg-container li img{
   width: 236px;
@@ -149,6 +188,8 @@ opacity: 0;
   font-size: 18px;
 }
 
+
+
 .link:hover{
   background-color: lightgray;
   border: 1px solid lightgray;
@@ -164,6 +205,7 @@ opacity: 0;
 
 .savebutton{
   height: 43px;
+  cursor: pointer;
   position: relative;
   width: 80.64px;
   left: 800px;

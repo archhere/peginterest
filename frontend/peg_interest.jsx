@@ -6,7 +6,8 @@ import Root from './components/root';
 // import * as pegAPIUtil from './util/peg_api_util';
 import {requestAllPegs,requestOnePeg,createPeg,updatePeg,deletePeg}
 from './actions/peg_actions';
-
+import {requestAllBoards,requestOneBoard,createBoard,updateBoard,deleteBoard}
+from './actions/board_actions';
 
 document.addEventListener('DOMContentLoaded',()=>{
   // window.login = login;
@@ -19,6 +20,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   window.createPeg = createPeg;
   window.updatePeg = updatePeg;
   window.deletePeg = deletePeg;
+  window.requestAllBoards = requestAllBoards;
+  window.requestOneBoard = requestOneBoard;
+  window.createBoard = createBoard;
+  window.updateBoard = updateBoard;
+  window.deleteBoard = deleteBoard;
+
 
   let store;
   if (window.currentUser) {

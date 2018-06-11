@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import { createPeg } from './../../actions/peg_actions';
-import { closeModal } from '../../../actions/modal_actions';
-import { requestSingleBoard } from './../../actions/board_actions';
+import { createBoard } from './../../actions/board_actions';
+import { closeModal } from './../../actions/modal_actions';
+import { requestOneBoard } from './../../actions/board_actions';
 import SavePegForm from './save_peg_form';
 
 
@@ -14,7 +15,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
   return {
     createPeg: peg => dispatch(createPeg(peg)),
-    // requestSingleBoard: id => dispatch(requestSingleBoard(id)),
+    createBoard: board => dispatch(createBoard(board)),
+    requestSingleBoard: id => dispatch(requestOneBoard(id)),
     closeModal: () => dispatch(closeModal()),
   };
 };

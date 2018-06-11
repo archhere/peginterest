@@ -3,7 +3,7 @@ import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 // import CreatePegContainer from './create_peg_container';
 // import EditPegContainer from './edit_peg_container';
-import SavePegContainer from './save_peg_container';
+import SavePegContainer from './../pegs/save_peg_container';
 import PegShowContainer from './../pegs/peg_show_container';
 // import CreateBoardContainer from './create_board_container';
 // import EditBoardContainer from './edit_board_container';
@@ -31,7 +31,7 @@ const Modal = (props) => {
       component = <EditPegContainer />;
       break;
     case 'SavePeg':
-      component = <SavePegContainer />;
+      component = <SavePegContainer peg={props.modal.peg}/>;
       break;
     case "CreateBoard":
       component = <CreateBoardContainer />;
@@ -46,10 +46,13 @@ const Modal = (props) => {
 
   let modalStyle;
   if(props.modal === 'CreatePeg' || props.modal === 'CreateBoard'){
-    modalStyle = {background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )`};
+    modalStyle = {background: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) )`};
   } else {
     modalStyle = {background: `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) )`};
+
   }
+
+  
   return (
     <div className="modal-background" style={modalStyle}>
       <div className="modal-child" onClick={e => e.stopPropagation()}>
