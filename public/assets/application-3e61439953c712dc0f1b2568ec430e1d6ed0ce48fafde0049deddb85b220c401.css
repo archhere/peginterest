@@ -1,0 +1,485 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  z-index: 10;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-group{
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  box-sizing: border-box;
+  margin: 20px;
+  width:inherit;
+}
+
+.header-group ul li{
+  display: inline;
+  padding-right: 20px;
+}
+
+.search i{
+  position: relative;
+  bottom: 0px;
+  right: 900px;
+  color:lightgray;
+}
+
+.searchbar{
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    height: 40px;
+    position: relative;
+    padding: 0 40px 0 52px;
+    width: 900px;
+    bottom: 1px;
+    left: 10px;
+    text-transform: none;
+}
+
+.nav_link{
+  position: relative;
+  right: 10px;
+}
+
+.profile-link {
+  display: inline;
+  position: relative;
+  right: 20px;
+  top: 0px;
+}
+
+.profile-link:hover{
+  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 0 0px 10px #f1f1f1;
+  border-radius: 25px;
+}
+
+.header-button:hover{
+  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  box-shadow: 0 0 0px 5px #f1f1f1;
+  border-radius: 25px;
+}
+
+
+.userimg i{
+  position: relative;
+  bottom: 2%;
+  color:lightgray;
+  color: #3477e5;
+  background-color: #b0c9f2;
+  border: 4px solid #b0c9f2;
+  border-radius: 100%;
+}
+
+.userimg img{
+  position: relative;
+  background: #f1f1f1;
+  /* border: 1px solid lightgray; */
+  border-radius: 100%;
+}
+
+.header-button{
+  color: #555;
+  position: relative;
+  bottom: 0px;
+  right: 30px;
+  /* margin-left: 43%; */
+  font-size: 15px;
+  font-family: sans-serif;
+  cursor: pointer;
+  background-color: white;
+  border: 0px;
+  height: 36px;
+  border-radius: 4px;
+}
+
+.nav_link{
+  color: #555;
+  text-decoration: none;
+}
+
+
+
+.header-group ul li img{
+  position:relative;
+  left: 0px;
+  height: 40px;
+  width: 40px;
+  top:16px;
+}
+/* line 5, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform {
+  width: 600px;
+  height: 660px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  background: white;
+}
+
+/* line 14, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform li {
+  list-style-type: none;
+  display: inline;
+}
+
+/* line 19, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform h3 {
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: -.3px;
+  line-height: 23px;
+  word-spacing: -1.3px;
+  font-weight: 700;
+}
+
+/* line 30, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform button {
+  left: 20px;
+}
+
+/* line 34, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform img {
+  height: 400px;
+  width: 258px;
+  position: absolute;
+  right: 260px;
+  top: 150px;
+  border-radius: 25px;
+  border: 2px solid white;
+}
+
+/* line 45, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-container li img {
+  width: 236px;
+  max-height: 500px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 53, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-container li:hover {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  background-size: 110% 110%;
+  cursor: zoom-in;
+  box-shadow: 0 0 0px 5px #f1f1f1;
+}
+
+/* line 62, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.masonry {
+  width: 236px;
+}
+
+/* line 66, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-container li span {
+  font-family: 'Roboto';
+  color: #555;
+}
+
+/* line 72, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+#thumbtack {
+  background-color: #bd081c;
+  background-size: contain;
+  box-shadow: 0 0 0px 10px #bd081c;
+  color: #efefef;
+  font-size: 14px;
+  width: 20px;
+  height: 10px;
+  position: relative;
+  left: 200px;
+  top: 50px;
+  opacity: 0;
+}
+
+/* line 87, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+#thumbtack:hover {
+  opacity: 1;
+}
+
+/* line 91, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.save {
+  display: inline;
+}
+
+/* line 96, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-container li {
+  list-style-type: none;
+}
+
+/* line 100, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 300px;
+}
+
+/* line 108, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.pegs-index {
+  display: grid;
+}
+
+/* line 113, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.peg-show {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  padding-right: 40px;
+  background: white;
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  height: 650px;
+  width: 40%;
+  text-overflow: clip;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 129, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.peg-show li {
+  list-style-type: none;
+  position: absolute;
+  word-wrap: break-word;
+}
+
+/* line 136, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.title {
+  top: 20px;
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: -.3px;
+  line-height: 23px;
+  word-spacing: -1.3px;
+  font-weight: 700;
+}
+
+/* line 148, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.author {
+  top: 600px;
+  left: 60px;
+  word-wrap: break-word;
+  font-family: Helvetica;
+  color: #211922;
+  left: 100px;
+}
+
+/* line 160, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.author span {
+  font-weight: 700;
+}
+
+/* line 164, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.peg-show li img {
+  height: 500px;
+  width: 558px;
+  position: absolute;
+  left: -70;
+  top: 70px;
+  border-radius: 25px;
+  border: 2px solid white;
+}
+
+/* line 174, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.divshow {
+  background: #EEEEEE;
+  height: 100%;
+}
+
+/* line 180, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.link {
+  position: absolute;
+  bottom: 500px;
+  left: 200px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line 193, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.link:hover {
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 0px 5px lightgray;
+  border-radius: 15px;
+  background-size: 120% 120%;
+}
+
+/* line 201, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.link Link {
+  color: #555;
+  font-family: 'Roboto';
+}
+
+/* line 206, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.savebutton {
+  height: 43px;
+  cursor: pointer;
+  position: relative;
+  width: 80.64px;
+  left: 800px;
+  top: 110px;
+  z-index: 7;
+}
+
+/* line 216, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.addItem {
+  position: fixed;
+  z-index: 5;
+  float: right;
+  bottom: 50px;
+  right: 50px;
+  width: 39px;
+  height: 39px;
+}
+/* line 224, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.addItem img {
+  cursor: pointer;
+}
+
+/* line 229, /Users/pramacha/Archana/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.addItem:hover {
+  filter: brightness(90%);
+}
+.login-form-container{
+  color:black;
+  width: 400px;
+  min-height: 533px;
+  margin: 0 auto;
+  /* border: 5px solid black; */
+  margin-top: 150px;
+  padding-top: 25px;
+}
+
+.login-form-container p{
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(85, 85, 85);
+  text-align: center;
+}
+
+.login-form-container span{
+    font-family: Roboto;
+    color: rgb(204, 204, 204);
+    font-size: 18px;
+    position:relative;
+}
+
+.logo{
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  position:relative;
+  bottom: -20%;
+  left: 45%;
+}
+
+.login-input {
+  display: flex;
+  width: 63%;
+  margin: 5px auto;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  opacity: .5;
+  font-size: 15px;
+}
+
+.session-submit {
+  color: white;
+  width: 268px;
+  margin-left: 65px;
+  padding: 0px 18px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin-top: 0px;
+  background-color: rgb(189, 8, 28);
+  border: 0px;
+  height: 36px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.demo-submit{
+  color: black;
+  margin-left: 43%;
+  font-size: 15px;
+  font-family: sans-serif;
+  /* outline: none; */
+  /* box-shadow: none; */
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: white;
+  border: 0px;
+  height: 36px;
+  /* display: inline-block; */
+  border-radius: 4px;
+}
+
+.demo-submit:hover{
+  background-color: lightgray;
+}
+
+.fromtype-button{
+  position: relative;
+  margin-left: 44.4%;
+}
+
+.errors{
+  position: relative;
+  left: 350px;
+  bottom: 240px;
+  color: orange;
+}
+
+/* .loginbackground{
+  background-image: url(/assets/loginpage-ac7877a66c9afc0e306e4640dea8dc42a6ac86c76a6749292875b06168eeb2b5.png);
+  height: 1000px;
+  z-index: -2;
+  /* background-image: url(loginpage.png); */
+} */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
