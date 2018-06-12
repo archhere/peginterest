@@ -5,7 +5,7 @@ export const RECEIVE_SINGLE_PEG = "RECEIVE_SINGLE_PEG";
 export const REMOVE_PEG = "REMOVE_PEG";
 export const RECEIVE_PEG_ERRORS = "RECEIVE_PEG_ERRORS";
 export const CLEAR_PEG_ERRORS = "CLEAR_PEG_ERRORS";
-
+// export const RESET_PEG = "RESET PEG";
 
 export const receivePegs = pegs => ({
   type: RECEIVE_PEGS,
@@ -61,3 +61,8 @@ export const deletePeg = (id) => (dispatch) => {
   return pegAPIUtil.deletePeg(id)
     .then(response => dispatch(removePeg(response)));
 };
+
+
+// export const resetPeg = () => ({
+//   type: RESET_PEG
+// });

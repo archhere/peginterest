@@ -1,7 +1,7 @@
 import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
-// import CreatePegContainer from './create_peg_container';
+import CreatePegContainer from './../pegs/create_peg_form_container';
 // import EditPegContainer from './edit_peg_container';
 import SavePegContainer from './../pegs/save_peg_container';
 import PegShowContainer from './../pegs/peg_show_container';
@@ -52,7 +52,7 @@ const Modal = (props) => {
 
   }
 
-  
+
   return (
     <div className="modal-background" style={modalStyle}>
       <div className="modal-child" onClick={e => e.stopPropagation()}>

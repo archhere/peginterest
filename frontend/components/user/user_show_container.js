@@ -20,7 +20,7 @@ const mapStateToProps = (state,ownProps) => {
 
 const mapDispatchToProps = dispatch => ({
   requestAllBoards: () => dispatch(requestAllBoards()),
-  
+  openModal: modal => dispatch(openModal(modal)),
 });
 
 

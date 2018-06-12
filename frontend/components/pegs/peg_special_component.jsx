@@ -2,6 +2,7 @@ import React from 'react';
 import Masonry from 'react-masonry-component';
 import UserShow from '../user/user_show';
 import {  Link, withRouter } from 'react-router-dom';
+import { openModal } from '../../actions/modal_actions';
 
 class PegsSpecialComponent extends React.Component {
   constructor (props) {
@@ -25,7 +26,7 @@ class PegsSpecialComponent extends React.Component {
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
                 >
-
+              <div className="outeraddpeg" onClick={() => this.props.props.openModal({modal: 'CreatePeg'} )}><i id="addpeg" class="fa fa-plus" aria-hidden="true"></i></div>
             {this.props.props.pegs.map(peg=>
 
 
@@ -35,7 +36,6 @@ class PegsSpecialComponent extends React.Component {
                   <div className="masonry">
                     <div class="container">
                     <img src={peg.image_url}/>
-
                     </div>
                     <span>{peg.title}</span>
                   </div>

@@ -1,6 +1,6 @@
 import {RECEIVE_PEGS,
   RECEIVE_SINGLE_PEG,REMOVE_PEG,RECEIVE_PEG_ERRORS,
-  CLEAR_PEG_ERRORS} from '../actions/peg_actions';
+  CLEAR_PEG_ERRORS,RESET_PEG} from '../actions/peg_actions';
 
 import merge from 'lodash/merge';
 
