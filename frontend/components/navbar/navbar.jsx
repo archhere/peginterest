@@ -19,7 +19,7 @@ const navBar = ({currentUser, logout}) => {
           <li><input type="text" className="searchbar" placeholder="Search"/></li>
           <li className="search"><i className="fas fa-search"></i></li>
           <li>
-            <ul className="profile-link">
+            <Link to={`/user/${currentUser.id}`}><ul className="profile-link">
             {(currentUser.image_url === null) ?
               <li className="userimg"><i className="fas fa-user"></i></li> :
               <li className="userimg"><img src={currentUser.image_url}/></li>
@@ -30,6 +30,7 @@ const navBar = ({currentUser, logout}) => {
               </Link>
           </li>
           </ul>
+          </Link>
         </li>
 
           <li><button className="header-button"
@@ -37,7 +38,7 @@ const navBar = ({currentUser, logout}) => {
 
         </ul>
       </hgroup>
-      <PegsIndexContainer/>
+
     </div>
   );
 

@@ -10,15 +10,11 @@
 # json.peg_ids board.items.pluck(:id)
 
 
-json.board do
+
   json.extract! board, :id, :title, :description
-  json.pegs do
-    json.array! board.pegs, :id
-  end
-  json.author do
-    json.extract! board.author, :username
-  end
-end
+  json.author_id board.author.id
+  json.author_username board.author.username
+
 
 json.pegs do
   board.pegs.each do |peg|

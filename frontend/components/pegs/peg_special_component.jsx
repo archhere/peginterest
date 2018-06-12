@@ -1,21 +1,14 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
 import Masonry from 'react-masonry-component';
-import MasonryInfiniteScroller from 'react-masonry-infinite';
-import MasonryLayout from 'react-masonry-layout';
-import PegShowContainer from './peg_show_container';
-import { ProtectedRoute } from '../../util/route_util';
-// import { openModal } from '../../actions/modal_actions';
-// import Masonry from 'react-masonry-component';
+import UserShow from '../user/user_show';
+import {  Link, withRouter } from 'react-router-dom';
 
-class PegsIndex extends React.Component {
+class PegsSpecialComponent extends React.Component {
   constructor (props) {
     super(props);
     console.log("props",props);
   }
-  componentDidMount(){
-    this.props.requestAllPegs();
-  }
+
 
   render(){
     let masonryOptions = {
@@ -33,7 +26,7 @@ class PegsIndex extends React.Component {
                 updateOnEachImageLoad={false}
                 >
 
-            {this.props.pegs.map(peg=>
+            {this.props.props.pegs.map(peg=>
 
 
               <div className="divpegshow" onClick={ () => this.props.history.push(`/peg/${peg.id}`) }>
@@ -59,4 +52,4 @@ class PegsIndex extends React.Component {
 
 }
 
-export default withRouter (PegsIndex);
+export default withRouter (PegsSpecialComponent);

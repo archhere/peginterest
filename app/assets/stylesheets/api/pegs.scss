@@ -43,10 +43,11 @@
 
 
 .create-peg-container li img{
-  width: 236px;
+  width: 230px;
   max-height: 500px;
   margin-top: 10px;
   padding-bottom: 10px;
+  border-radius: 15px;
 }
 
 
@@ -84,9 +85,10 @@ opacity: 0;
 // visibility: hidden;
 }
 
-#thumbtack:hover{
-  opacity: 1;
-}
+// #thumbtack:hover{
+//   opacity: 1;
+// }
+
 
 .save{
   display: inline;

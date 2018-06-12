@@ -5,11 +5,11 @@ import PegShow from './peg_show';
 import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = (state,ownProps) => {
-  // console.log("state is",state);
+  console.log("state is",state);
   // console.log("ownProps is",ownProps);
 
   const peg = state.entities.pegs[ownProps.match.params.id];
-  // console.log("peg",peg);
+  console.log("peg",peg);
   // console.log("author",state.entities.users[peg.author_id]);
   // console.log("peg_author",peg.author_id);
   // console.log("allusers",state.entities.users);
@@ -17,8 +17,7 @@ const mapStateToProps = (state,ownProps) => {
   return {
     peg: peg,
     currentUser: state.entities.users[state.session.id],
-    peg_author: peg.author,
-    board: peg.board
+    peg_author: peg.auther_username,
   };
 };
 

@@ -1,0 +1,83 @@
+.boards{
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 450px;
+  top: 100px;
+}
+
+
+/* .boards li div li{
+  position: relative;
+  top: 50px;
+
+} */
+
+.boardtitle{
+  position: relative;
+  top: 220px;
+  right: 10px;
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+    font-size: 18px;
+    letter-spacing: -.3px;
+    line-height: 23px;
+    word-spacing: -1.3px;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.profilelist{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.profilelist button{
+  list-style: none;
+  position: absolute;
+}
+
+.boardbutton{
+  left: 40%;
+  bottom: 0;
+}
+
+.pegbutton{
+  left: 70%;
+  bottom: 0;
+}
+
+
+.profileheader{
+  position: relative;
+  bottom: 600;
+  left: 18%;
+  font-size: 36px;
+  font-family: 'Roboto';
+  color:  #555;
+}
+
+.outer{
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  width: 301px;
+  height:200px;
+  margin-right: 20px;
+  list-style: none;
+  /* box-sizing: border-box; */
+}
+
+.outer:hover{
+  background-color: #f1f1f1;
+  box-shadow: 0 0 0px 10px #f1f1f1;
+
+}
+
+.changes{
+  /* background: red; */
+  margin-top: 400px;
+}

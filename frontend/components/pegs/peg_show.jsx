@@ -18,6 +18,8 @@ class PegShow extends React.Component{
   }
 
   render(){
+    let author = this.props.peg_author;
+    author = author[0].toUpperCase()+author.slice(1);
     if (this.props.peg){
       return (
 
@@ -26,11 +28,12 @@ class PegShow extends React.Component{
         <div
           onClick={() => this.props.openModal({modal: 'SavePeg', peg: this.props.peg} )}>
           <img src={window.savebutton} className="savebutton"/>
-        </div>  
+        </div>
           <ul className="peg-show">
+
             <li className="title">{this.props.peg.title}</li>
             <li><img src={this.props.peg.image_url}/></li>
-            <li className="author"><span>{this.props.peg_author.firstname}</span> Saved peg to board {this.props.board.title}</li>
+            <li className="author">{author} saved peg to board</li>
           </ul>
           <span className="link"><Link to='/' style={{ textDecoration: 'none',color: '#555'}}>&lt;&nbsp;Home</Link></span>
 
