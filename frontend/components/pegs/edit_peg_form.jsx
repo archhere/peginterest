@@ -38,6 +38,9 @@ class EditPegForm extends React.Component{
   }
 
 
+
+
+
   update(type){
       return e => this.setState({
         [type]: e.target.value
@@ -50,7 +53,6 @@ class EditPegForm extends React.Component{
     }
 
     handleclick(e){
-      e.preventDefault();
       this.props.deletePeg(this.state.id).then(this.props.closeModal())
       .then(this.props.history.push(`/user/${this.props.currentUser.id}`));
     }

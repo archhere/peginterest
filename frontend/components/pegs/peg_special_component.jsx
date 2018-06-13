@@ -10,7 +10,11 @@ class PegsSpecialComponent extends React.Component {
     console.log("props",props);
   }
 
-  
+  componentDidMount(){
+    this.props.requestAllPegs();
+  }
+
+
 
   render(){
     let masonryOptions = {
@@ -27,8 +31,8 @@ class PegsSpecialComponent extends React.Component {
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
                 >
-              <div className="outeraddpeg" onClick={() => this.props.props.openModal({modal: 'CreatePeg'} )}><i id="addpeg" class="fa fa-plus" aria-hidden="true"></i></div>
-            {this.props.props.pegs.map(peg=>
+              <div className="outeraddpeg" onClick={() => this.props.openModal({modal: 'CreatePeg'} )}><i id="addpeg" class="fa fa-plus" aria-hidden="true"></i></div>
+            {this.props.pegs.map(peg=>
 
 
               <div className="divpegshow" onClick={ () => this.props.history.push(`/peg/${peg.id}`) }>

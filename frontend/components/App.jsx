@@ -15,6 +15,7 @@ import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import PegsIndexContainer from './pegs/pegs_index_container';
 import PegShowContainer from './pegs/peg_show_container';
+import PegsSpecialContainer from './pegs/peg_special_container';
 import UserShowContainer from './user/user_show_container';
 import Modal from './modal/modal';
 
@@ -29,6 +30,7 @@ const App = () => (
     <Switch>
       <ProtectedRoute exact path="/user/:id" component={UserShowContainer} />
       <ProtectedRoute exact path="/peg/:id" component={PegShowContainer} />
+      <ProtectedRoute exact path="/user/:id/boards/:id/pegs" component={PegsSpecialContainer} />
       <ProtectedRoute exact path="/" component={PegsIndexContainer} />
     </Switch>
 

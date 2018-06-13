@@ -15,13 +15,21 @@ class PegsIndex extends React.Component {
   }
   componentDidMount(){
     this.props.requestAllPegs();
+
   }
+
+
 
   render(){
     let masonryOptions = {
       transitionDuration: 1,
       gutter: 20,
     };
+
+    let actualProps;
+    if (this.props.match.path === "/") actualProps = this.props.pegs;
+    else actualProps = this.props.props;
+    console.log(actualProps);
 
     return(
 

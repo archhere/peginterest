@@ -1,0 +1,60 @@
+// Place all the styles related to the board controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.boardindexpage{
+
+}
+
+.boardinfor1{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
+.boardindexpage li{
+  list-style: none;
+  // background: blue;
+}
+
+.boardinfo12{
+  position: absolute;
+  
+  text-align: justify;
+}
+
+.boardinfo123{
+  padding-right: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  margin-right: 20px;
+  height: 200px;
+  width: 301px;
+}
+
+
+#addboard{
+  background-color: #bd081c;
+  background-size: contain;
+  box-shadow: 0 0 0px 10px #bd081c;
+  border-radius: 50%;
+  color: #efefef;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 150px;
+  top: 90px;
+  margin: auto;
+  text-align:center;
+}
+
+
+
+.boardinfo123:hover{
+  border: 3px solid #f1f1f1;
+  border-radius: 10px;
+  // background-size: 110% 110%;
+  cursor: zoom-in;
+  box-shadow: 0 0 0px 5px #f1f1f1;
+}

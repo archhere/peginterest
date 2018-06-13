@@ -1,16 +1,19 @@
 import React from 'react';
 import {  Link, withRouter } from 'react-router-dom';
 import Masonry from 'react-masonry-component';
-import PegsSpecialComponent from '../pegs/peg_special_component';
-import BoardIndexComponent from '../boards/board_index_component';
-
+import PegsSpecialContainer from '../pegs/peg_special_container';
+import BoardIndexContainer from '../boards/board_index_container';
+import PegsIndexContainer from '../pegs/pegs_index_container';
 
 
 class UserShow extends React.Component{
   constructor(props){
     super(props);
-    this.state = {component: BoardIndexComponent};
-    console.log(this.state);
+    this.state = {
+      component: 'boardSpecialContainer'
+    };
+
+
   }
 
   componentDidMount(){
@@ -21,10 +24,10 @@ class UserShow extends React.Component{
   handleclick(type){
     return (e) => {
       if (type === "peg") {
-        this.setState({component: PegsSpecialComponent});
+        this.setState({component: 'pegsSpecialContainer'});
       }
       else {
-        this.setState({component: BoardIndexComponent});
+        this.setState({component: 'boardSpecialContainer'});
       }
     };
   }
@@ -37,10 +40,16 @@ componentWillReceiveProps(nextProps){
 
 
   render(){
+
+    const components = {
+      'pegsSpecialContainer': <PegsSpecialContainer />,
+    'boardSpecialContainer': <BoardIndexContainer />
+    };
+    const chosenComponent = this.state.component;
     return (
       <div>
         <div class="changes">
-          <this.state.component props={this.props}/>
+          {components[chosenComponent]}
         </div>
         <ul className="boards">
         <h3 className="profileheader">{this.props.user.firstname+" "+this.props.user.lastname}</h3>

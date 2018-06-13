@@ -1,28 +1,41 @@
 import React from 'react';
 import Masonry from 'react-masonry-component';
 import UserShow from '../user/user_show';
+import {  Link, withRouter } from 'react-router-dom';
+import PegsSpecialComponent from '../pegs/peg_special_component';
+import  { Redirect } from 'react-router-dom'
 
 class BoardIndexComponent extends React.Component {
   constructor (props) {
     super(props);
-    console.log("props",props);
   }
 
+  componentWillReceiveProps(){
+    console.log("received props");
+  }
+
+  componentDidMount(){
+    console.log("indexmounted");
+    this.props.requestAllBoards();
+  }
+
+
+
   render(){
-    console.log("boardval",this.props.props.boards);
+    console.log("render props",this.props.boards);
     return (
-      <div>
-        <ul>
-      {this.props.props.boards.map(board =>
-      <li>{board.title}</li>
-      )}
-      </ul>
+      <div className="boardindexpage">
+        <ul className="boardinfor1">
+          <li><div className="boardinfo123"><i id="addboard" class="fa fa-plus" aria-hidden="true"></i></div></li>
+          {this.props.boards.map(board =>
+          <Link to={`${this.props.currentUser.id}/boards/${board.id}/pegs`}>
+            <div className="boardinfo123"><li className="boardinfo12">{board.title}</li></div>
+          </Link>
+          )}
+        </ul>
       </div>
     );
-
-
-
   }
 }
 
-export default BoardIndexComponent;
+export default withRouter(BoardIndexComponent);
