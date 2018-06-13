@@ -146,7 +146,7 @@ opacity: 0;
 }
 
 .peg-show{
-  position: relative;
+  position: absolute;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: 300px;
@@ -199,7 +199,7 @@ opacity: 0;
 .peg-show li img{
   height: 500px;
   width: 558px;
-  position: absolute;
+  position: relative;
   left: -70;
   top: 70px;
   border-radius: 25px;
@@ -208,13 +208,13 @@ opacity: 0;
 
 .divshow{
   background: #EEEEEE;
-  height: 100%;
+  height: 900px;
 
 }
 
 .link{
   position: absolute;
-  bottom: 500px;
+  bottom: 540px;
   left: 200px;
   font-family: 'Roboto' ;
   font-weight: bold;
@@ -228,7 +228,7 @@ opacity: 0;
 .link:hover{
   background-color: lightgray;
   border: 1px solid lightgray;
-  box-shadow: 0 0 0px 5px lightgray;
+  box-shadow: 0 0 0px 5px #lightgray;
   border-radius: 15px;
   background-size: 120% 120%;
 }
@@ -248,6 +248,23 @@ opacity: 0;
   z-index: 7;
 }
 
+.editbutton{
+  height: 18.34px;
+  cursor: pointer;
+  position: absolute;
+  width: 18.34px;
+  left: 910px;
+  top: 220px;
+  z-index: 7;
+  // background: white;
+}
+
+.editbutton:hover{
+  background: #f1f1f1;
+  box-shadow: inset 0 0 10px #f1f1f1;
+  border-radius: 50%;
+}
+
 .addItem {
   position: fixed;
   z-index: 5;
@@ -256,11 +273,162 @@ opacity: 0;
   right: 50px;
   width: 39px;
   height: 39px;
-  img {
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
 .addItem:hover {
   filter: brightness(90%);
+}
+
+#CreatePegForm{
+  background: white;
+  height: 600px;
+  width: 700px;
+  position: absolute;
+  top: -300px;
+  right: -340px;
+  border-radius: 15px;
+}
+
+.close-modal{
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #b5b5b5;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 21px;
+}
+
+.create-peg-header{
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+    font-size: 21px;
+    letter-spacing: -.4px;
+    line-height: 1.2;
+    word-spacing: -1.3px;
+    font-weight: 700;
+    position: relative;
+    right: 15px;
+    top: 10px;
+
+}
+
+.create-peg-header-outer{
+  border-bottom: 1px solid #f1f1f1;
+  height: 50;
+}
+
+
+.dropzone-text-container{
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+    font-size: 16px;
+    letter-spacing: -.4px;
+    line-height: 1.2;
+    word-spacing: -1.3px;
+    font-weight: 700;
+    position: relative;
+    top: 40%;
+    word-wrap: break-word;
+}
+
+
+
+
+.website{
+  color: red;
+  position: relative;
+  left: 400px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+.website input{
+  margin-top: 5px;
+  width: 40%;
+  height: 30px;
+}
+
+.titleform{
+  position: relative;
+  color: red;
+  left: 400px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+.titleform input{
+  margin-top: 5px;
+  width: 40%;
+  height: 30px;
+}
+
+.formdescp{
+  position: relative;
+  left: 400px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+.formdescp textarea{
+  margin-top: 5px;
+  width: 40%;
+  height: 166px;
+  color: #f1f1f1;
+}
+
+
+
+.dropzone{
+  // background: red;
+  position: absolute;
+  height: 367px;
+  width: 30%;
+  left: 10%;
+  border-radius: 15px;
+  border: 1px dashed lightgray;
+  position: relative;
+  top: -350px;
+}
+
+.submit-create-button{
+  position: absolute;
+  align-content: center;
+  left: 620px;
+  top: 550px;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: red;
+  // box-shadow: 0 0 0px 5px red;
+}
+
+.picturethumbnail{
+  top: 60px;
+}
+
+
+.pencil{
+  color: red;
 }

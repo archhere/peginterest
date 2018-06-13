@@ -45,13 +45,15 @@ class CreatePegForm extends React.Component {
     if (this.state.image_url === '') {
       return (
         <div className="dropzone-text-container">
-          <h4>Place Image or Click here</h4>
+          <i class="fa fa-camera" aria-hidden="true"></i>
+          <p>Drop an image or click to select a file to upload.</p>
         </div>
       );
       } else {
         return (
-          <div>
-            <img src={this.state.image_url}/>
+          <div className="picturethumbnail">
+            <p>Image upload successful.Click done</p>
+            <img width="150" height="150" className="imgthumbnail" src={this.state.image_url}/>
           </div>
         );
       }
@@ -79,42 +81,42 @@ class CreatePegForm extends React.Component {
     handleSubmit(e){
       e.stopPropagation();
       e.preventDefault();
-      console.log(this.state);
       this.props.openModal({modal: 'SavePeg', peg: this.state});
     }
 
   render() {
-    console.log(this.state);
     return (
       <div>
         <form id="CreatePegForm" onSubmit={this.handleSubmit} className="create-peg-form">
-          <h1>Create Peg!</h1><br/>
+          <div className="create-peg-header-outer"><h3 className="create-peg-header">Create Peg</h3></div><br/>
           <p>{this.renderErrors()}</p>
+          <span class="close-modal" onClick={() => this.props.closeModal()}>X</span>
+          <label className="website"><span>Website</span> <br />
+          <input type="text" value={this.state.url} placeholder="Add the URL this peg links to" onChange={this.update('url')}/>
+        </label>
+        <br/> <br/>
+          <label className="titleform"><span>Title</span> <br />
+            <input type="text" requiredvalue={this.state.title} placeholder="Give a title" onChange={this.update('title')}/>
+          </label>
+          <br/> <br/>
 
-          <label><span>Title</span>
-            <input type="text" requiredvalue={this.state.title} onChange={this.update('title')}/>
+          <label className="formdescp"><span>Description</span> <br />
+            <textarea placeholder="Add a description(optional)" onChange={this.update('description')}>
+            {this.state.description}</textarea>
           </label>
           <br/>
 
-          <label><span>Description</span>
-            <input type="text" value={this.state.description} onChange={this.update('description')}/>
-          </label>
-          <br/>
-
-          <label><span>url</span>
-            <input type="text" value={this.state.url} onChange={this.update('url')}/>
-          </label>
-          <br/>
 
           <Dropzone
             multiple={false}
             accept="image/*"
-            onDrop={this.handleImageUpload}>
-            <p>Drop an image or click to select a file to upload.</p>
+            onDrop={this.handleImageUpload} className="dropzone">
             {this.picturethumbnail()}
+
           </Dropzone>
 
-          <input className="submit-create-button" type="submit" value={'Submit'} />
+          <div className="submitouterdiv">
+          <input className="submit-create-button" type="submit" value='Done' /></div>
 
         </form>
       </div>

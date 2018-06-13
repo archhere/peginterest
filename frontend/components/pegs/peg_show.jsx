@@ -21,15 +21,33 @@ class PegShow extends React.Component{
   render(){
     let author = this.props.peg_author;
     author = author[0].toUpperCase()+author.slice(1);
+
+
+
+
     if (this.props.peg){
+
+      if (this.props.peg.author_id === this.props.currentUser.id){
+        var val = <img src="https://res.cloudinary.com/archhere/image/upload/v1528847964/simple-grey-small-pencil-icon.jpg" className="editbutton"/>;
+      }
+      else {
+        val = "";
+      }
+      
       return (
 
 
       <div className="divshow">
+        <div>
+          {val}
+        </div>
         <div
           onClick={() => this.props.openModal({modal: 'SavePeg', peg: this.props.peg} )}>
           <img src={window.savebutton} className="savebutton"/>
         </div>
+
+
+
           <ul className="peg-show">
 
             <li className="title">{this.props.peg.title}</li>
