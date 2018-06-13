@@ -33,12 +33,12 @@ class PegShow extends React.Component{
       else {
         val = "";
       }
-      
+
       return (
 
 
       <div className="divshow">
-        <div>
+        <div onClick={() => this.props.openModal({modal: 'EditPeg', peg: this.props.peg} )}>
           {val}
         </div>
         <div

@@ -10,6 +10,7 @@ class PegsSpecialComponent extends React.Component {
     console.log("props",props);
   }
 
+  
 
   render(){
     let masonryOptions = {

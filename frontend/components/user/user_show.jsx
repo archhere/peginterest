@@ -13,6 +13,11 @@ class UserShow extends React.Component{
     console.log(this.state);
   }
 
+  componentDidMount(){
+    this.forceUpdate();
+  }
+
+
   handleclick(type){
     return (e) => {
       if (type === "peg") {

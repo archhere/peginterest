@@ -3,7 +3,8 @@ import PegsIndex from './pegs_index';
 import { requestAllPegs, clearPegErrors } from './../../actions/peg_actions';
 import { openModal } from '../../actions/modal_actions';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state,ownProps) => {
+  console.log("indexpageownprops",ownProps);
   return ({
     pegs: Object.values(state.entities.pegs) || [],
     currentUser: state.entities.users[state.session.id]

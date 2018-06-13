@@ -46,7 +46,7 @@ class Api::PegsController < ApplicationController
 
 
   def destroy
-    @peg = current_user.pegs.params[:id]
+    @peg = current_user.pegs.find(params[:id])
 
     if @peg
       if @peg.destroy

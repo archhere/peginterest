@@ -13,7 +13,7 @@ const pegsReducer = (state={},action) => {
       return merge({},state,{[action.peg.id]: action.peg});
     case REMOVE_PEG:
       let newerState = merge({},state);
-      delete newerState[action.id];
+      delete newerState[action.peg.id];
       return newerState;
     default:
       return state;

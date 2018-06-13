@@ -2,7 +2,7 @@ import React from 'react';
 import { closeModal } from '../../actions/modal_actions';
 import { connect } from 'react-redux';
 import CreatePegContainer from './../pegs/create_peg_form_container';
-// import EditPegContainer from './edit_peg_container';
+import EditPegContainer from './../pegs/edit_peg_form_container';
 import SavePegContainer from './../pegs/save_peg_container';
 import PegShowContainer from './../pegs/peg_show_container';
 // import CreateBoardContainer from './create_board_container';
@@ -28,7 +28,7 @@ const Modal = (props) => {
       component = <CreatePegContainer />;
       break;
     case 'EditPeg':
-      component = <EditPegContainer />;
+      component = <EditPegContainer peg={props.modal.peg}/>;
       break;
     case 'SavePeg':
       component = <SavePegContainer peg={props.modal.peg}/>;
@@ -70,7 +70,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
     return {
-      closeModal: () => dispatch(closeModal())
+      closeModal: () => dispatch(closeModal()),
     };
 };
 
