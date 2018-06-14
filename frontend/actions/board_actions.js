@@ -8,12 +8,12 @@ export const CLEAR_BOARD_ERRORS = "CLEAR_BOARD_ERRORS";
 
 export const requestAllBoards = () => dispatch => {
   return boardAPIUtil.fetchBoards()
-  .then(response => dispatch({type: RECEIVE_BOARDS,boards: response}));
+  .then(response => dispatch({type: RECEIVE_BOARDS,payload: response}));
   };
 
 export const requestOneBoard = (id) => dispatch => {
   return boardAPIUtil.fetchBoard(id)
-  .then(response => dispatch({type: RECEIVE_SINGLE_BOARD,board: response}));
+  .then(response => dispatch({type: RECEIVE_SINGLE_BOARD,payload: response}));
 };
 
 export const deleteBoard = (id) => (dispatch) => {

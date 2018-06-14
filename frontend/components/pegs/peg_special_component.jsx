@@ -2,7 +2,7 @@ import React from 'react';
 import Masonry from 'react-masonry-component';
 import UserShow from '../user/user_show';
 import {  Link, withRouter } from 'react-router-dom';
-import { openModal } from '../../actions/modal_actions';
+
 
 class PegsSpecialComponent extends React.Component {
   constructor (props) {
@@ -22,8 +22,17 @@ class PegsSpecialComponent extends React.Component {
       gutter: 20,
     };
 
-    return(
+    if (this.props.currentBoard.title !== ""){
+      var val = <img src="https://res.cloudinary.com/archhere/image/upload/v1528847964/simple-grey-small-pencil-icon.jpg" className="editbutton"/>;
+    }
+    else {
+      val = "";
+    }
 
+    return(
+        <div>
+          <div>{val}</div>
+          <h3>{this.props.currentBoard.title}</h3>
         <ul class='create-peg-container'>
           <Masonry className={"pegs-index"}
                 elementType={'ul'}
@@ -50,7 +59,7 @@ class PegsSpecialComponent extends React.Component {
             )}
           </Masonry>
         </ul>
-
+        </div>
     );
 
   }

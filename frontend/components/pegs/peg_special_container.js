@@ -10,13 +10,25 @@ const mapStateToProps = (state,ownProps) => {
   const currentUser = state.entities.users[state.session.id];
   console.log(state);
   console.log(ownProps);
-  const pegs = Object.values(state.entities.pegs)
+  const usualpegs = Object.values(state.entities.pegs)
   .filter(peg => (peg.author_id === currentUser.id));
-  
+
+  let pegs;
+  let currentBoard;
+  if (ownProps.match.path === "/user/:id/boards/:id/pegs") {
+    pegs = usualpegs.filter(peg => (peg.board_id == ownProps.match.params.id));
+    currentBoard =  state.entities.boards[ownProps.match.params.id];
+  }
+  else {
+    pegs = usualpegs;
+    currentBoard = {id: "",title: ""};
+  }
+
   return {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.pegs,
-    pegs: pegs
+    pegs: pegs,
+    currentBoard: currentBoard
   };
 };
 

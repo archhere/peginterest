@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+  // <i class="fas fa-thumbtack" className="peg-save-modal" ></i>
+
 .saveform{
   // background: red;
   width: 600px;
@@ -69,58 +71,102 @@
   position: absolute;
   right: 260px;
   top: 150px;
-  border-radius: 25px;
+  border-radius: 8px;
   border: 2px solid white;
 }
 
 
-.create-peg-container li img{
+.create-peg-container div img{
   width: 230px;
   max-height: 500px;
-  margin-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 15px;
+  margin-top: -1px;
+  padding-bottom: 3px;
+  border-radius: 8px;
 }
 
 
-.create-peg-container li:hover {
-  background-color: #f1f1f1;
-  border: 1px solid #f1f1f1;
-  border-radius: 10px;
-  background-size: 110% 110%;
+.masonry:hover {
   cursor: zoom-in;
-  box-shadow: 0 0 0px 5px #f1f1f1;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px;
+  margin: -10px;
+  height: 60%;
+  width:100%;
+  // margin-bottom: 10px;
+  // box-shadow: 0px 0px 0px 6px #f1f1f1;
+  transition: box-shadow 0.5s linear;
 }
+
+
+
+.index-image:hover div.peg-save{
+  opacity: 1;
+}
+
+
+
+div.peg-save {
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  background-color: #bd081c;
+  position: relative;
+  left: 150px;
+  top: 42px;
+  color: white;
+  width: 70px;
+  text-align: center;
+  height: 25px;
+  padding-top: 11px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+
+
+// .fa-thumbtack {
+// background-color: #bd081c;
+// background-size: contain;
+// box-shadow: 0 0 0px 10px #bd081c;
+// color: #efefef;
+// text-align: left;
+// font-size: 14px;
+// width: 40px;
+// height: 10px;
+// position: relative;
+// left: 170px;
+// top: 48px;
+// cursor: pointer;
+//
+// // border-radius: 1em;
+// // opacity: 0;
+// // visibility: hidden;
+// }
+
+
+
+peg-save-modal{
+
+}
+
 
 .masonry{
   width: 236px;
 }
 
-.create-peg-container li span{
+.create-peg-container div span{
   font-family: 'Roboto';
+  margin-left: 10px;
   color: #555;
+  font-size: 14px;
+  hyphens: auto;
+  word-wrap: break-word;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.4px;
 }
-
-
-#thumbtack {
-background-color: #bd081c;
-background-size: contain;
-box-shadow: 0 0 0px 10px #bd081c;
-color: #efefef;
-text-align: center;
-font-size: 14px;
-width: 20px;
-height: 10px;
-position: relative;
-left: 200px;
-top: 50px;
-opacity: 0;
-// visibility: hidden;
-}
-
-// #thumbtack:hover{
-//   opacity: 1;
-// }
 
 
 .save{
@@ -130,6 +176,7 @@ opacity: 0;
 
 .create-peg-container li{
   list-style-type: none;
+  padding-bottom: 8px;
 }
 
 .ellipsis {

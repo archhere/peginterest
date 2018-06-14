@@ -19,7 +19,7 @@
 
 .boardinfo12{
   position: absolute;
-  
+
   text-align: justify;
 }
 
@@ -57,4 +57,34 @@
   // background-size: 110% 110%;
   cursor: zoom-in;
   box-shadow: 0 0 0px 5px #f1f1f1;
+}
+
+#CreateBoardForm{
+  background: white;
+  height: 390px;
+  width: 600px;
+  position: absolute;
+  top: -300px;
+  right: -340px;
+  border-radius: 15px;
+}
+
+.boardtitle1{
+  color: red;
+  position: relative;
+  left: 100px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+  
+}
+
+.boardtitle1 input{
+  margin-top: 5px;
+  width: 40%;
+  height: 30px;
 }

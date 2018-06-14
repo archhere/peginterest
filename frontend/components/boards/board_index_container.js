@@ -11,6 +11,7 @@ const mapStateToProps = (state,ownProps) => {
   const currentUser = state.entities.users[state.session.id];
   console.log(state);
   console.log(ownProps);
+  console.log("boards",Object.values(state.entities.boards));
   return {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.boards,

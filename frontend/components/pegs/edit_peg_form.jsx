@@ -17,14 +17,6 @@ class EditPegForm extends React.Component{
   }
 
 
-  componentDidMount(){
-    console.log("Mounted");
-  }
-
-  componentWillReceiveProps(){
-    console.log("receivedprops");
-  }
-
   renderErrors() {
     return(
       <ul>

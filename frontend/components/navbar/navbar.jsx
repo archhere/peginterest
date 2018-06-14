@@ -12,31 +12,40 @@ const navBar = ({currentUser, logout}) => {
   );
   const nav = () => (
 
-    <div>
+    <div className="final">
       <hgroup className="header-group">
-        <ul>
-          <li><Link to="/"><img src={window.logo}/></Link></li>
-          <li><input type="text" className="searchbar" placeholder="Search"/></li>
-          <li className="search"><i className="fas fa-search"></i></li>
-          <li>
-            <Link to={`/user/${currentUser.id}`}><ul className="profile-link">
-            {(currentUser.image_url === null) ?
-              <li className="userimg"><i className="fas fa-user"></i></li> :
-              <li className="userimg"><img src={currentUser.image_url}/></li>
-            }
+          <div className="searchandlogo">
+          <div>
+            <Link to="/"><img src={window.logo}/></Link>
+          </div>
+          <div className="searchbarouter">
+            <div>
+              <input type="text" className="searchbar" placeholder="Search"/>
+            </div>
+            <div className="search"><i className="fas fa-search"></i></div>
+          </div>
+          </div>
 
-          <li><Link className="nav_link" to={'/'}>
+          <div className="profile-link-outer">
+            <Link style={{ textDecoration: 'none'}} to={`/user/${currentUser.id}`}>
+              <div className="profile-link">
+            {(currentUser.image_url === null) ?
+              <div className="userimg"><i className="fas fa-user"></i></div> :
+              <div className="userimg"><img src={currentUser.image_url}/></div>
+            }
+            </div>
+          <div className="nav_link">
             {currentUser.username[0].toUpperCase()+currentUser.username.slice(1)}
-              </Link>
-          </li>
-          </ul>
+
+          </div>
+
           </Link>
-        </li>
+        </div>
 
           <li><button className="header-button"
             onClick={()=>logout()}>Log Out</button></li>
 
-        </ul>
+          
       </hgroup>
 
     </div>

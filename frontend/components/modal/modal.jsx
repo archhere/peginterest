@@ -5,7 +5,7 @@ import CreatePegContainer from './../pegs/create_peg_form_container';
 import EditPegContainer from './../pegs/edit_peg_form_container';
 import SavePegContainer from './../pegs/save_peg_container';
 import PegShowContainer from './../pegs/peg_show_container';
-// import CreateBoardContainer from './create_board_container';
+import CreateBoardContainer from './../boards/create_board_container';
 // import EditBoardContainer from './edit_board_container';
 
 

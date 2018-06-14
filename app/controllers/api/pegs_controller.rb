@@ -3,8 +3,6 @@ class Api::PegsController < ApplicationController
   def index
 
     @pegs = Peg.all
-    @boards = @pegs.map {|peg| peg.board}
-
     render 'api/pegs/index'
   end
 

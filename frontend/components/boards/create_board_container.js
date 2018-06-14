@@ -14,8 +14,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    createPeg: peg => dispatch(createPeg(peg)),
-    receivePegErrors: errors => dispatch(receivePegErrors(errors)),
+    receiveBoardErrors: errors => dispatch(receiveBoardErrors(errors)),
     createBoard: board => dispatch(createBoard(board)),
     closeModal: () => dispatch(closeModal()),
     openModal: modal => dispatch(openModal(modal)),
@@ -25,4 +24,4 @@ const mapDispatchToProps = dispatch => {
 export default connect (
   mapStateToProps,
   mapDispatchToProps
-)(CreatePegForm);
+)(CreateBoard);

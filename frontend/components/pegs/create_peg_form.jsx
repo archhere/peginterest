@@ -92,11 +92,11 @@ class CreatePegForm extends React.Component {
           <p>{this.renderErrors()}</p>
           <span class="close-modal" onClick={() => this.props.closeModal()}>X</span>
           <label className="website"><span>Website</span> <br />
-          <input type="text" value={this.state.url} placeholder="Add the URL this peg links to" onChange={this.update('url')}/>
+          <input type="text" required value={this.state.url} placeholder="Add the URL this peg links to" onChange={this.update('url')}/>
         </label>
         <br/> <br/>
           <label className="titleform"><span>Title</span> <br />
-            <input type="text" requiredvalue={this.state.title} placeholder="Give a title" onChange={this.update('title')}/>
+            <input type="text" required value={this.state.title} placeholder="Give a title" onChange={this.update('title')}/>
           </label>
           <br/> <br/>
 
@@ -110,7 +110,7 @@ class CreatePegForm extends React.Component {
           <Dropzone
             multiple={false}
             accept="image/*"
-            onDrop={this.handleImageUpload} className="dropzone">
+            onDrop={this.handleImageUpload} className="dropzone" minSize={1}>
             {this.picturethumbnail()}
 
           </Dropzone>

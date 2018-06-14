@@ -16,6 +16,7 @@ const mapDispatchToProps = dispatch => {
   return {
     requestAllPegs: () => dispatch(requestAllPegs()),
     clearPegErrors: () => dispatch(clearPegErrors()),
+    openModal: modal => dispatch(openModal(modal)),
   };
 };
 
