@@ -18,7 +18,7 @@ class BoardIndexComponent extends React.Component {
 
 
   render(){
-    console.log("render props",this.props.boards);
+    
 
     return (
       <div className="boardindexpage">
