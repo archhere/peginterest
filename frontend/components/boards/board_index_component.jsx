@@ -19,13 +19,13 @@ class BoardIndexComponent extends React.Component {
 
   render(){
     console.log("render props",this.props.boards);
-    
+
     return (
       <div className="boardindexpage">
         <ul className="boardinfor1">
           <li><div className="boardinfo123" onClick={() => this.props.openModal({modal: 'CreateBoard'} )}><i id="addboard" class="fa fa-plus" aria-hidden="true"></i></div></li>
           {this.props.boards.map(board =>
-          <Link to={`${this.props.currentUser.id}/boards/${board.id}/pegs`}>
+          <Link style={{textDecoration: 'none'}} to={`${this.props.currentUser.id}/boards/${board.id}/pegs`}>
             <div className="boardinfo123"><li className="boardinfo12">{board.title}</li></div>
           </Link>
           )}

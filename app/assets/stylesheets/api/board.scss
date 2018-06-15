@@ -2,14 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .boardindexpage{
+display: grid;
+width:inherit;
 
 }
 
 .boardinfor1{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   position: relative;
   align-items: center;
+  padding: 3px;
 }
 
 .boardindexpage li{
@@ -18,9 +22,19 @@
 }
 
 .boardinfo12{
-  position: absolute;
-
-  text-align: justify;
+  position: relative;
+  margin-top: 210px;
+  text-align: left;
+  color: #555;
+  font-size: 18px;
+  max-width: 100%;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+font-weight: 700;
+line-height: 1.2;
+letter-spacing: -.4px;
+font-family: 'Roboto'
 }
 
 .boardinfo123{
@@ -31,6 +45,8 @@
   margin-right: 20px;
   height: 200px;
   width: 301px;
+  margin-bottom: 40px;
+
 }
 
 
@@ -52,16 +68,14 @@
 
 
 .boardinfo123:hover{
-  border: 3px solid #f1f1f1;
-  border-radius: 10px;
-  // background-size: 110% 110%;
+  border-radius: 8px;
   cursor: zoom-in;
   box-shadow: 0 0 0px 5px #f1f1f1;
 }
 
 #CreateBoardForm{
   background: white;
-  height: 390px;
+  height: 290px;
   width: 600px;
   position: absolute;
   top: -300px;
@@ -80,11 +94,44 @@
   letter-spacing: -.4px;
   line-height: 1.2;
   word-spacing: -1.3px;
-  
+
 }
 
 .boardtitle1 input{
   margin-top: 5px;
+  padding: 5px;
+  margin-left: 40px;
   width: 40%;
   height: 30px;
+}
+
+.submit-create-button12{
+  position: absolute;
+  align-content: center;
+  left: 500px;
+  top: 250px;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  // box-shadow: 0 0 0px 5px red;
+}
+
+.submit-cancel-button1{
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  position: absolute;
+  top: 252px;
+  left: 410px;
 }
