@@ -7,10 +7,7 @@ import {  Link, withRouter } from 'react-router-dom';
 
 
 const mapStateToProps = (state,ownProps) => {
-  console.log(state);
-  console.log(ownProps);
-  console.log(ownProps.location.pathname[15]);
-  console.log(state.entities.boards[ownProps.location.pathname[15]]);
+  
   return {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.boards,

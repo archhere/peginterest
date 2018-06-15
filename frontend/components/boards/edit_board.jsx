@@ -4,7 +4,7 @@ import {  Link, withRouter } from 'react-router-dom';
 class EditBoard extends React.Component {
   constructor (props) {
     super(props);
-    console.log("props",props);
+    
     this.state = {
       title: this.props.board.title,
       id: this.props.board.id,
