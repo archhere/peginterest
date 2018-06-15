@@ -14,8 +14,6 @@ class PegsSpecialComponent extends React.Component {
     this.props.requestAllPegs();
   }
 
-
-
   render(){
     let masonryOptions = {
       transitionDuration: 1,
@@ -31,39 +29,47 @@ class PegsSpecialComponent extends React.Component {
 
     return(
         <div>
-          <div>{val}</div>
+          <div className="boardpeg34">
+          <div className="val12">{val}</div>
           <h3>{this.props.currentBoard.title}</h3>
-        <ul class='create-peg-container'>
-          <Masonry className={"pegs-index"}
-                elementType={'ul'}
-                options={masonryOptions}
-                disableImagesLoaded={false}
-                updateOnEachImageLoad={false}
-                >
-              <div className="outeraddpeg" onClick={() => this.props.openModal({modal: 'CreatePeg'} )}><i id="addpeg" class="fa fa-plus" aria-hidden="true"></i></div>
-            {this.props.pegs.map(peg=>
+          </div>
+            <div class='create-peg-container'>
+              <Masonry className={"pegs-index"}
+                    elementType={'ul'}
+                    options={masonryOptions}
+                    disableImagesLoaded={false}
+                    updateOnEachImageLoad={false}
+                    >
+                <div className="outeraddpeg" onClick={() => this.props.openModal({modal: 'CreatePeg'} )}><i id="addpeg" class="fa fa-plus" aria-hidden="true"></i></div>
+                {this.props.pegs.map(peg=>
 
 
-              <div className="divpegshow" onClick={ () => this.props.history.push(`/peg/${peg.id}`) }>
-                <i id="thumbtack" class="fas fa-thumbtack" ></i>
-                <li className="index-image" >
-                  <div className="masonry">
-                    <div class="container">
-                    <img src={peg.image_url}/>
+                  <div className="divpegshow" onClick={ () => this.props.history.push(`/peg/${peg.id}`) }>
+
+                    <div className="index-image" >
+                      <div className="divshowmodal">
+                        <div onClick={e => {e.preventDefault();
+                        e.stopPropagation();
+                        this.props.openModal({modal: 'SavePeg', peg: peg} );}} className="peg-save">Save</div>
+                      </div>
+                      <div className="masonry">
+                        <div class="container">
+                        <img src={peg.image_url}/>
+
+                        </div>
+                        <span>{peg.title}</span>
+                      </div>
                     </div>
-                    <span>{peg.title}</span>
                   </div>
-                </li>
-              </div>
 
-            )}
-          </Masonry>
-        </ul>
+                )}
+              </Masonry>
+            </div>
         </div>
     );
 
-  }
+    }
 
-}
+    }
 
-export default withRouter (PegsSpecialComponent);
+    export default withRouter (PegsSpecialComponent);

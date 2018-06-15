@@ -10,6 +10,7 @@ class PegShow extends React.Component{
 
   componentDidMount(){
     this.props.requestOnePeg(this.props.match.params.id);
+    window.scroll(5,5);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -37,25 +38,29 @@ class PegShow extends React.Component{
       return (
 
 
-      <div className="divshow">
-        <div onClick={() => this.props.openModal({modal: 'EditPeg', peg: this.props.peg} )}>
-          {val}
+      <div className="divshow" onClick={ () => this.props.history.goBack() }>
+        <div className="box101">
+
+        <div className="saveedit101">
+          <div className="editbutton1011" onClick={() => this.props.openModal({modal: 'EditPeg', peg: this.props.peg} )}>
+            {val}
+          </div>
+          <div className="savebutton1011"
+            onClick={() => this.props.openModal({modal: 'SavePeg', peg: this.props.peg} )}>
+            <img src={window.savebutton} className="savebutton"/>
+          </div>
         </div>
-        <div
-          onClick={() => this.props.openModal({modal: 'SavePeg', peg: this.props.peg} )}>
-          <img src={window.savebutton} className="savebutton"/>
-        </div>
 
 
 
-          <ul className="peg-show">
 
-            <li className="title">{this.props.peg.title}</li>
-            <li><img src={this.props.peg.image_url}/></li>
-            <li className="author">{author} saved peg to board</li>
-          </ul>
-          <span className="link"><Link to='/' style={{ textDecoration: 'none',color: '#555'}}>&lt;&nbsp;Home</Link></span>
+            <div className="title102">{this.props.peg.title}</div>
+            <div><img src={this.props.peg.image_url} className='image101' /></div>
+            <div className="userimg123"><img src={this.props.peg.auther_image}/></div>
+            <div className="author102"><strong>{author}</strong>&nbsp; saved peg to board</div>
 
+
+          </div>
         </div>
 
       );

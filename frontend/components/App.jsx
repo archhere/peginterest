@@ -21,22 +21,28 @@ import Modal from './modal/modal';
 
 
 
-const App = () => (
-  <div>
-    <Modal />
-    <Route path='/' component={NavBarContainer}/>
-    <AuthRoute exact path="/login" component={LogInFormContainer} />
-    <AuthRoute exact path="/signup" component={SignUpFormContainer} />
-    <Switch>
-      <ProtectedRoute exact path="/user/:id" component={UserShowContainer} />
-      <ProtectedRoute exact path="/peg/:id" component={PegShowContainer} />
-      <ProtectedRoute exact path="/user/:id/boards/:id/pegs" component={PegsSpecialContainer} />
-      <ProtectedRoute exact path="/" component={PegsIndexContainer} />
-    </Switch>
+const App = () => {
+  
+  return (
+
+    <div>
+
+      <Modal />
+      <Route path='/' component={NavBarContainer}/>
+      <AuthRoute exact path="/login" component={LogInFormContainer} />
+      <AuthRoute exact path="/signup" component={SignUpFormContainer} />
 
 
+      <Switch>
+        <ProtectedRoute exact path="/peg/:id" component={PegShowContainer} />
+        <ProtectedRoute exact path="/user/:id" component={UserShowContainer} />
+        <ProtectedRoute exact path="/user/:id/boards/:id/pegs" component={PegsSpecialContainer} />
+        <ProtectedRoute exact path="/" component={PegsIndexContainer} />
+      </Switch>
 
-  </div>
-);
+
+    </div>
+  )
+};
 
 export default App;

@@ -25,7 +25,7 @@ const navBar = ({currentUser, logout}) => {
             <div className="search"><i className="fas fa-search"></i></div>
           </div>
           </div>
-
+          <div className="profilelogout">
           <div className="profile-link-outer">
             <Link style={{ textDecoration: 'none'}} to={`/user/${currentUser.id}`}>
               <div className="profile-link">
@@ -45,7 +45,7 @@ const navBar = ({currentUser, logout}) => {
           <li><button className="header-button"
             onClick={()=>logout()}>Log Out</button></li>
 
-          
+        </div>
       </hgroup>
 
     </div>

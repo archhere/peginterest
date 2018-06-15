@@ -56,14 +56,9 @@ class PegsIndex extends React.Component {
       gutter: 20,
     };
 
-    let actualProps;
-    if (this.props.match.path === "/") actualProps = this.props.pegs;
-    else actualProps = this.props.props;
-    console.log(actualProps);
-
     return(
 
-        <div class='create-peg-container'>
+        <div class='create-peg-container' onClick={ () => this.props.closeModal()}>
           <Masonry className={"pegs-index"}
                 elementType={'ul'}
                 options={masonryOptions}

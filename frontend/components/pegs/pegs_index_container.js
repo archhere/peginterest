@@ -2,6 +2,8 @@ import { connect } from 'react-redux';
 import PegsIndex from './pegs_index';
 import { requestAllPegs, clearPegErrors } from './../../actions/peg_actions';
 import { openModal } from '../../actions/modal_actions';
+import { requestOneBoard } from './../../actions/board_actions';
+import { closeModal } from './../../actions/modal_actions';
 
 const mapStateToProps = (state,ownProps) => {
   console.log("indexpageownprops",ownProps);
@@ -17,6 +19,7 @@ const mapDispatchToProps = dispatch => {
     requestAllPegs: () => dispatch(requestAllPegs()),
     clearPegErrors: () => dispatch(clearPegErrors()),
     openModal: modal => dispatch(openModal(modal)),
+    closeModal: () => dispatch(closeModal()),
   };
 };
 
