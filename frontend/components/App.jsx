@@ -32,14 +32,12 @@ const App = () => {
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
 
-
       <Switch>
         <ProtectedRoute exact path="/peg/:id" component={PegShowContainer} />
         <ProtectedRoute exact path="/user/:id" component={UserShowContainer} />
         <ProtectedRoute exact path="/user/:id/boards/:id/pegs" component={PegsSpecialContainer} />
         <ProtectedRoute exact path="/" component={PegsIndexContainer} />
       </Switch>
-
 
     </div>
   );
