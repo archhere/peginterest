@@ -33,12 +33,12 @@ class SavePegForm extends React.Component {
   render(){
     const boards = Object.values(this.props.currentUser.boards);
     return (
-      <div className="saveform">
+      <div className="saveform1236">
         <div className="superheader">
-        <span class="close-modal" onClick={() => this.props.closeModal()}>X</span>  
+        <span class="close-modal" onClick={() => this.props.closeModal()}>X</span>
         <h3>Choose Board</h3>
         </div>
-        <div className="superimg">
+        <div className="superimg55">
         <img src={this.props.peg.image_url}/>
         </div>
         <ul className="superboard">
@@ -49,7 +49,10 @@ class SavePegForm extends React.Component {
             </li>
           )}
         </ul>
-        <div className="boardinfo1234" onClick={() => this.props.openModal({modal: 'CreateBoard'} )}><i id="addboard11" class="fa fa-plus" aria-hidden="true"><span>Createboard</span></i></div>
+
+        <div className="boardinfo1234" onClick={() => this.props.openModal({modal: 'CreateBoard'} )}><div className="boards22">Create Board</div><i id="addboard11" class="fa fa-plus" aria-hidden="true"></i></div>
+
+
       </div>
     );
   }

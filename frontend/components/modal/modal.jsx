@@ -6,7 +6,7 @@ import EditPegContainer from './../pegs/edit_peg_form_container';
 import SavePegContainer from './../pegs/save_peg_container';
 import PegShowContainer from './../pegs/peg_show_container';
 import CreateBoardContainer from './../boards/create_board_container';
-// import EditBoardContainer from './edit_board_container';
+import EditBoardContainer from './../boards/edit_board_container';
 
 
 //by importing react, is our functional component implicitly
@@ -37,7 +37,7 @@ const Modal = (props) => {
       component = <CreateBoardContainer />;
       break;
     case "EditBoard":
-      component = <EditBoardContainer />;
+      component = <EditBoardContainer board={props.modal.board}/>;
       break;
     default:
       return null;

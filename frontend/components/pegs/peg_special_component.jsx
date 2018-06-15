@@ -19,18 +19,26 @@ class PegsSpecialComponent extends React.Component {
       transitionDuration: 1,
       gutter: 20,
     };
-
+    let superduper;
     if (this.props.currentBoard.title !== ""){
       var val = <img src="https://res.cloudinary.com/archhere/image/upload/v1528847964/simple-grey-small-pencil-icon.jpg" className="editbutton"/>;
+      superduper = "boardpeg34";
     }
     else {
       val = "";
+      superduper = "boardpeg3456";
+    }
+
+    if(!this.props.currentBoard){
+      return (
+        <div>Loading</div>
+      )
     }
 
     return(
         <div>
-          <div className="boardpeg34">
-          <div className="val12">{val}</div>
+          <div className={superduper}>
+          <div className="val12" onClick={() => this.props.openModal({modal: 'EditBoard',board: this.props.currentBoard}  )}>{val}</div>
           <h3>{this.props.currentBoard.title}</h3>
           </div>
             <div class='create-peg-container'>

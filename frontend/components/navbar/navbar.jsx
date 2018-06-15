@@ -16,7 +16,7 @@ const navBar = ({currentUser, logout}) => {
       <hgroup className="header-group">
           <div className="searchandlogo">
           <div>
-            <Link to="/"><img src={window.logo}/></Link>
+            <Link to="/"><img src={window.logo} className="superlogo12"/></Link>
           </div>
           <div className="searchbarouter">
             <div>

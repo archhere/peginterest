@@ -14,6 +14,18 @@
   border-radius: 8px;
 }
 
+
+.saveform1236{
+  // background: red;
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  background: white;
+  border-radius: 8px;
+  position: relative;
+}
+
 .outeraddpeg{
   position: absolute;
   border-radius: 10px;
@@ -63,11 +75,25 @@
 
 }
 
+.superimg55{
+  margin-right: 250px;
+  border-right: 1px solid #f1f1f1;
+  height: 87%;
+}
+
+.superimg55 img{
+  margin-top: 70px;
+  margin-left: 47px;
+  width: 250px;
+  height: 250px;
+}
+
+
 .boardinfo1234{
   // display: flex;
 
   position: relative;
-  bottom: 200px;
+  bottom: 300px;
   left: 380px;
   // z-index: 10;
 }
@@ -84,26 +110,37 @@
     font-weight: 700;
 }
 
+
+
 #addboard11{
+  display: flex;
   background-color: #bd081c;
-  background-size: contain;
-  box-shadow: 0 0 0px 10px #bd081c;
+  background-size: cover;
+  box-shadow: 0 0 0px 6px #bd081c;
   border-radius: 50%;
   color: #efefef;
   width: 20px;
   height: 20px;
-  // position: relative;
-  // left: 150px;
-  // top: 90px;
-  // margin: auto;
+  justify-content: space-around;
+  align-items: center;
   text-align:center;
 }
+
+.boardandstuff12{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 500px;
+}
+
+
 
 .saveform img{
   max-height: 250px;
   width: 250px;
   margin-left: 49px;
   margin-top: 56px;
+  padding: 5px;
   // margin-top: 15px;
   // position: absolute;
   // right: 260px;
@@ -122,21 +159,47 @@
 }
 
 .superboard li{
-  padding: 0;
+  list-style: none;
+
+}
+
+.superboard li input{
   border: none;
-  background: none;
   color: #555;
   padding-top: 7px;
   word-wrap: break-word;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -.4px;
   font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.superboard li input:hover{
+  background-color: lightgray;
 }
 
 .saveform h3{
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: right;
+    font-size: 21px;
+    letter-spacing: -.3px;
+    line-height: 23px;
+    word-spacing: -1.3px;
+    font-weight: 700;
+    padding-right: 100px;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.saveform1236 h3{
+  display:absolute;
   font-family: Helvetica, sans-serif;
   color: #555;
   text-align: right;
@@ -551,6 +614,21 @@ div.peg-save {
 
 }
 
+.create-peg-header123{
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+    font-size: 24px;
+    letter-spacing: -.4px;
+    line-height: 1.2;
+    // word-spacing: -1.3px;
+    font-weight: 700;
+    position: relative;
+    right: 15px;
+    top: 10px;
+
+}
+
 .create-peg-header-outer{
   border-bottom: 1px solid #f1f1f1;
   height: 50;
@@ -577,7 +655,7 @@ div.peg-save {
 .website{
   color: red;
   position: relative;
-  left: 400px;
+  left: 370px;
   font-family: 'Roboto';
   color: #555;
   text-align: center;
@@ -591,12 +669,17 @@ div.peg-save {
   margin-top: 5px;
   width: 40%;
   height: 30px;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  color: #555;
+  font-size: 14px;
+
 }
 
 .titleform{
   position: relative;
   color: red;
-  left: 400px;
+  left: 370px;
   font-family: 'Roboto';
   color: #555;
   text-align: center;
@@ -610,11 +693,15 @@ div.peg-save {
   margin-top: 5px;
   width: 40%;
   height: 30px;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  color: #555;
+  font-size: 14px;
 }
 
 .formdescp{
   position: relative;
-  left: 400px;
+  left: 370px;
   font-family: 'Roboto';
   color: #555;
   text-align: center;
@@ -629,6 +716,64 @@ div.peg-save {
   width: 40%;
   height: 166px;
   color: #f1f1f1;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  color: #555;
+  font-size: 14px;
+}
+
+.website78{
+  color: red;
+  position: relative;
+  // left: 400px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+.website78 input{
+  margin-top: 5px;
+  width: 220%;
+  height: 30px;
+  border-radius: 3px;
+  letter-spacing: -.4px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #555;
+  font-family: 'Roboto';
+  background-color: #f1f1f1;
+}
+
+.titleform78{
+  position: relative;
+  color: red;
+  // left: 400px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+.titleform78 input{
+  margin-top: 5px;
+  width: 220%;
+  height: 30px;
+  border-radius: 3px;
+  letter-spacing: -.4px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #555;
+  font-family: 'Roboto';
+  background-color: #f1f1f1;
 }
 
 
@@ -648,8 +793,8 @@ div.peg-save {
 .submit-create-button{
   position: absolute;
   align-content: center;
-  left: 620px;
-  top: 550px;
+  left: 600px;
+  bottom: 50px;
   border: none;
   line-height: 1.2;
   letter-spacing: -.4px;
@@ -659,11 +804,52 @@ div.peg-save {
   font-size: 16px;
   background-color: lightgray;
   font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+  // box-shadow: 0 0 0px 5px red;
+}
+
+.submit-create-buttonawesome{
+  position: absolute;
+  align-content: center;
+  left: 600px;
+  bottom: 50px;
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: #bd081c;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.submit-create-button123{
+  align-content: center;
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  position: relative;
+  bottom: 75px;
+  left: 30px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3px;
   // box-shadow: 0 0 0px 5px red;
 }
 
 .picturethumbnail{
   top: 60px;
+  margin-left: 25px;
 }
 
 
@@ -674,7 +860,7 @@ div.peg-save {
 
 .edit-peg-form{
   background: white;
-  height: 600px;
+  height: 500px;
   width: 700px;
   position: absolute;
   top: -300px;
@@ -687,7 +873,13 @@ div.peg-save {
 }
 
 .edit-peg-header{
-  margin-left: 30px;
+  text-align: center;
+  color: #555;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .thumbnail{
@@ -698,37 +890,62 @@ div.peg-save {
   padding-top: 20px;
 }
 
+.thumbnail12{
+  margin-right: 400px;
+  // margin-bottom: 1000px;
+  position: relative;
+  bottom: 200px;
+  // margin-left: 10px;
+  // margin-top: 200px;
+  // position: absolute;
+  // bottom: 280px;
+  // left: 20px;
+  // padding-top: 20px;
+}
+
+.submitouterdiv{
+  display: flex;
+
+}
+
+
 .editform12{
-  padding-top: 20px;
-  margin-right:10px;
-  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 300px;
 }
 
 .submits123{
   display: flex;
   flex-direction: row;
-  position: absolute;
-  top: 550px;
-
+  margin-top: 53px;
+  margin-left: 500px;
 }
 
 
-.submit-edit-button{
+
+.submit-edit-button12{
 
   border: none;
   line-height: 1.2;
   letter-spacing: -.4px;
-  color: #555;
+  color: white;
   cursor: pointer;
   font-family: 'Roboto';
   font-size: 16px;
-  background-color: lightgray;
+  background-color: #ad081b;
   font-weight: 700;
   position: relative;
   bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3px;
 }
 
-.submit-cancel-button{
+.submit-cancel-button126{
   border: none;
   line-height: 1.2;
   letter-spacing: -.4px;
@@ -741,6 +958,10 @@ div.peg-save {
   position: relative;
   left: 5px;
   bottom: 20px;
+  margin-right: 20px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .submits123 li{
@@ -749,13 +970,18 @@ div.peg-save {
 
 .boardpeg34{
   display: flex;
-  flex-direction: column;
-  margin-top: 60px;
-  margin-left: 40px;
-  margin-left: 550px;
+  // margin-top: 60px;
+  // margin-left: 40px;
+  // margin-left: 550px;
   justify-content: center;
-  align-items: left;
-  height: 5px;
+  // align-items: left;
+  // height: 7px;
+}
+
+.boardpeg3456{
+  display: flex;
+  justify-content: center;
+  height: 0px;
 }
 
 .val12{
@@ -771,4 +997,9 @@ div.peg-save {
     word-spacing: -2.25px;
     width: 75%;
     max-width: 860px;
+}
+
+.imgthumbnail{
+  margin-top: 10px;
+
 }

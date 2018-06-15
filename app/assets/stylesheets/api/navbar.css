@@ -21,7 +21,7 @@
 
 .search i{
   position: relative;
-  top: 15px;
+  top: 14px;
   left: 80px;
   color:lightgray;
 }
@@ -44,8 +44,10 @@
     text-transform: none;
 }
 
+
 .nav_link{
   position: relative;
+  margin-left: 4px;
   /* right: 8px; */
   text-decoration: none;
   color: #555;
@@ -76,7 +78,7 @@
   justify-content:space-between;
   align-items:left;
   position: relative;
-  right: 100px;
+  right: 120px;
 }
 
 .profile-link-outer Link:hover{

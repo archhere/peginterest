@@ -59,25 +59,29 @@ class EditPegForm extends React.Component{
             <p>{this.renderErrors()}</p>
             <span class="close-modal" onClick={() => this.props.closeModal()}>X</span>
             <div className="editform12">
-              <label className="website"><span>Website</span> <br />
-              <input type="text" value={this.state.url} onChange={this.update('url')}/>
+              <label className="website78"><span>Website</span> <br />
+              <input type="text" required value={this.state.url} onChange={this.update('url')}/>
               </label>
               <br/> <br/>
-              <label className="titleform"><span>Title</span> <br />
-              <input type="text" value={this.state.title} onChange={this.update('title')}/>
+              <label className="titleform78"><span>Title</span> <br />
+              <input type="text" required value={this.state.title} onChange={this.update('title')}/>
               </label>
               <br/> <br/>
-              <div className="thumbnail"><img src={this.state.image_url} width="150" height="200" border-radius="15" /></div>
+              <div className="thumbnailouter98">
+              <div className="thumbnail12"><img src={this.state.image_url} width="150" height="200" border-radius="15" /></div>
+              </div>
             </div>
-        <div className="submitouterdiv">
-          <button onClick={this.handleclick} className="submit-create-button">Delete</button>
-        </div>
+
 
       <div className="submitouterdiv">
         <ul className="submits123">
-          <li><input className="submit-edit-button" type="submit" value='Save' /></li>
-          <li><button className="submit-cancel-button" onClick={() => this.props.closeModal()}>Cancel</button></li>
+          <li><button className="submit-cancel-button126" onClick={() => this.props.closeModal()}>Cancel</button></li>
+          <li><input className="submit-edit-button12" type="submit" value='Save' /></li>
         </ul>
+      </div>
+
+      <div className="submitouterdiv">
+        <button onClick={this.handleclick} className="submit-create-button123">Delete</button>
       </div>
 
         </form>

@@ -49,8 +49,18 @@ font-family: 'Roboto'
 
 }
 
-
+.boards22{
+  color: #555;
+  position: absolute;
+  left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -.4px;
+  font-family: 'Roboto';
+}
 #addboard{
+  display: flex;
   background-color: #bd081c;
   background-size: contain;
   box-shadow: 0 0 0px 10px #bd081c;
@@ -59,9 +69,11 @@ font-family: 'Roboto'
   width: 20px;
   height: 20px;
   position: relative;
-  left: 150px;
+  // left: 150px;
   top: 90px;
   margin: auto;
+  justify-content: center;
+  align-items: center;
   text-align:center;
 }
 
@@ -74,6 +86,16 @@ font-family: 'Roboto'
 }
 
 #CreateBoardForm{
+  background: white;
+  height: 290px;
+  width: 600px;
+  position: absolute;
+  top: -300px;
+  right: -340px;
+  border-radius: 15px;
+}
+
+#EditBoardForm{
   background: white;
   height: 290px;
   width: 600px;
@@ -103,13 +125,16 @@ font-family: 'Roboto'
   margin-left: 40px;
   width: 40%;
   height: 30px;
+  font-family: 'Roboto';
+  color: #555;
+  border-radius: 3px;
 }
 
 .submit-create-button12{
   position: absolute;
   align-content: center;
   left: 500px;
-  top: 250px;
+  top: 240px;
   line-height: 1.2;
   letter-spacing: -.4px;
   color: #555;
@@ -118,6 +143,8 @@ font-family: 'Roboto'
   font-size: 16px;
   background-color: lightgray;
   font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
   // box-shadow: 0 0 0px 5px red;
 }
 
@@ -132,6 +159,8 @@ font-family: 'Roboto'
   background-color: lightgray;
   font-weight: 700;
   position: absolute;
-  top: 252px;
+  top: 242px;
   left: 410px;
+  padding: 10px;
+  border-radius: 3px;
 }

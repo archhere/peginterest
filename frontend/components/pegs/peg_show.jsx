@@ -10,7 +10,7 @@ class PegShow extends React.Component{
 
   componentDidMount(){
     this.props.requestOnePeg(this.props.match.params.id);
-    window.scroll(5,5);
+    window.scroll(0,0);
   }
 
   componentWillReceiveProps(nextProps) {

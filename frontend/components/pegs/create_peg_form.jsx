@@ -85,6 +85,14 @@ class CreatePegForm extends React.Component {
     }
 
   render() {
+    let someclass;
+    if (this.state.image_url === ''){
+      someclass = "submit-create-button";
+    }
+    else {
+      someclass = "submit-create-buttonawesome";
+    }
+
     return (
       <div>
         <form id="CreatePegForm" onSubmit={this.handleSubmit} className="create-peg-form">
@@ -116,7 +124,7 @@ class CreatePegForm extends React.Component {
           </Dropzone>
 
           <div className="submitouterdiv">
-          <input className="submit-create-button" type="submit" value='Done' /></div>
+          <input className={someclass} type="submit" value='Done' /></div>
 
         </form>
       </div>
