@@ -53,7 +53,7 @@ group :development do
   gem 'jquery-rails'
 end
 
-group: :production do
+group :production do
   gem 'rails_12factor'
 end
 
