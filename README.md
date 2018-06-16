@@ -44,12 +44,12 @@ Users are able to upload images from their own devices onto the website. This us
 ### Future features
 Peginterest was designed and built in two weeks. The following features will be updated in the future.
 
-* User Following
+* User Following: 
   Users will be able to follow other users.I will be using a joins table to implement this.
 
-* Infinite Scroll
+* Infinite Scroll: 
   The discover feed will gradually show more pins as the user scrolls down the page.
 
-* Search
+* Search: 
   Users will be able to search for the pins and boards that they are interested in.
 
