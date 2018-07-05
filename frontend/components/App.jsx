@@ -28,7 +28,7 @@ const App = () => {
     <div>
 
       <Modal />
-      <Route path='/' component={NavBarContainer}/>
+      <ProtectedRoute path='/' component={NavBarContainer}/>
       <AuthRoute exact path="/login" component={LogInFormContainer} />
       <AuthRoute exact path="/signup" component={SignUpFormContainer} />
 

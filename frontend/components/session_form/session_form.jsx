@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { login } from '../../actions/session_actions';
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -73,6 +74,7 @@ class SessionForm extends React.Component {
     if (this.props.formType === 'signup') placeholder_val = "Create a password"
     else placeholder_val = "Password"
     return (
+      <div className = "outersessionpage">
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <img src={window.logo} className="logo"/>
@@ -101,9 +103,10 @@ class SessionForm extends React.Component {
            <input className="demo-submit"
              onClick={(e)=>this.demoLogin(e)} type="submit" value="Demo"/>
            <br/>
-         <div className='fromtype-button'>{this.props.navLink}</div>
+         <div style={{ color: 'white'}} className='fromtype-button'>{this.props.navLink}</div>
         </form>
         <div className="errors">{this.renderErrors()}</div>
+      </div>
       </div>
     );
   }

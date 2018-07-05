@@ -2,18 +2,40 @@
   color:black;
   width: 400px;
   min-height: 533px;
-  margin: 0 auto;
+  // margin: 0 auto;
   /* border: 5px solid black; */
-  margin-top: 150px;
+  // margin-top: 150px;
+  align-self: center;
   padding-top: 25px;
+  background: white;
+  border: 3px;
+}
+
+.outersessionpage{
+  background: url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
+  // background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 0, 0.5)),
+  //                 url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
+  background-size: contain;
+  // opacity: 0.6;
+  overflow: scroll;
+  width: 1500px;
+  margin-left: -10px;
+  margin-top: -20px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-form-container p{
   font-family: Roboto;
+  opacity: 1;
+  z-index: 5;
   font-weight: 700;
   font-size: 28px;
   color: rgb(85, 85, 85);
   text-align: center;
+  background: white;
 }
 
 .login-form-container span{
@@ -63,33 +85,64 @@
 }
 
 .demo-submit{
-  color: black;
-  margin-left: 43%;
+  color: white;
+  width: 268px;
+  margin-left: 16.2%;
+  fpadding: 0px 18px;
   font-size: 15px;
-  font-family: sans-serif;
-  /* outline: none; */
-  /* box-shadow: none; */
+  font-weight: 400;
+  font-family: Roboto;
+  outline: none;
+  box-shadow: none;
   cursor: pointer;
   margin-top: 10px;
-  background-color: white;
+  background-color: rgb(189, 8, 28);
   border: 0px;
   height: 36px;
-  /* display: inline-block; */
+  display: inline-block;
   border-radius: 4px;
 }
 
 .demo-submit:hover{
-  background-color: lightgray;
+  left: 150%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
 }
 
+// .session-submit:hover{
+//   background-color: lightgray;
+// }
+
 .fromtype-button{
+  text-decoration: none;
   position: relative;
-  margin-left: 44.4%;
+  margin-left: 16.5%;
+  margin-top: 4%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  width: 232px;
+  padding: 0px 18px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: #4267b2;
+  border: 0px;
+  height: 36px;
+  display: inline-block;
+  border-radius: 4px;
 }
 
 .errors{
   position: relative;
-  left: 350px;
-  bottom: 240px;
+  list-style: none;
+  // left: 350px;
+  // bottom: 240px;
   color: orange;
 }
