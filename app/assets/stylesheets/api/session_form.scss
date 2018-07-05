@@ -13,18 +13,17 @@
 
 .outersessionpage{
   background: url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
-  // background-image: linear-gradient(rgba(0, 0, 255, 0.2), rgba(255, 255, 0, 0.5)),
+  // background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3)),
   //                 url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
-  background-size: contain;
-  // opacity: 0.6;
-  overflow: scroll;
-  width: 1500px;
-  margin-left: -10px;
-  margin-top: -20px;
+  background-size: cover;
+  // background-color: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  width: 100%;
+  margin: 0 auto;
+  // margin-top: -20px;
   height: 800px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
 }
 
 .login-form-container p{
@@ -115,28 +114,31 @@
 // .session-submit:hover{
 //   background-color: lightgray;
 // }
-
+.somelink{
+  text-decoration: none;
+}
 .fromtype-button{
   text-decoration: none;
-  position: relative;
-  margin-left: 16.5%;
+  // position: relative;
+  margin-left: 36.5%;
   margin-top: 4%;
-  text-align: center;
   line-height: 30px;
-  color: white;
-  width: 232px;
-  padding: 0px 18px;
-  font-size: 15px;
-  font-weight: 400;
-  font-family: Roboto;
-  outline: none;
+  font-weight: 700;
+  font-size: 28px;
+  color: rgb(85, 85, 85);
+  // width: 232px;
+  // padding: 0px 18px;
+  // font-size: 15px;
+  // font-weight: 400;
+  // font-family: Roboto;
+  // outline: none;
   box-shadow: none;
   cursor: pointer;
-  background-color: #4267b2;
-  border: 0px;
+  // background-color: #4267b2;
+  // border: 0px;
   height: 36px;
   display: inline-block;
-  border-radius: 4px;
+  // border-radius: 4px;
 }
 
 .errors{
