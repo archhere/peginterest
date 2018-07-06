@@ -5,7 +5,6 @@ import {  Link, withRouter } from 'react-router-dom';
 class PegShow extends React.Component{
   constructor(props){
     super(props);
-    console.log("show page props",props);
   }
 
   componentDidMount(){

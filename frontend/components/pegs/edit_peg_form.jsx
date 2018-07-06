@@ -3,7 +3,6 @@ import React from 'react';
 class EditPegForm extends React.Component{
   constructor(props){
     super(props);
-    console.log("props",props);
     this.state = {
       id: this.props.peg.id,
       title: this.props.peg.title,

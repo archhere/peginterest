@@ -5,7 +5,7 @@ import navBar from './navbar';
 import { openModal } from '../../actions/modal_actions';
 
 const mapStateToProps = (state) => {
-
+  
   return {
 
     currentUser: state.entities.users[state.session.id]
@@ -15,7 +15,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout())
-  
+
 });
 
 export default connect(

@@ -33,11 +33,6 @@ class UserShow extends React.Component{
   }
 
 
-componentWillReceiveProps(nextProps){
-  console.log("componentdidupdate");
-}
-
-
 
   render(){
 

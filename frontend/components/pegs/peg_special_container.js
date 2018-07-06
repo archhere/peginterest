@@ -8,8 +8,6 @@ import {  Link, withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state,ownProps) => {
   const currentUser = state.entities.users[state.session.id];
-  console.log(state);
-  console.log(ownProps);
   const usualpegs = Object.values(state.entities.pegs)
   .filter(peg => (peg.author_id === currentUser.id));
 

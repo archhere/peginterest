@@ -3,12 +3,9 @@ import { closeModal } from './../../actions/modal_actions';
 import EditPegForm from './edit_peg_form';
 import { updatePeg,receivePegErrors,deletePeg } from './../../actions/peg_actions';
 import { createBoard } from './../../actions/board_actions';
-// import { openModal } from '../../actions/modal_actions';
 import {  Link, withRouter } from 'react-router-dom';
 
 const mapStateToProps = (state,ownProps) => {
-  console.log(state);
-  console.log(ownProps);
   return {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.pegs,
@@ -22,7 +19,6 @@ const mapDispatchToProps = dispatch => {
     receivePegErrors: errors => dispatch(receivePegErrors(errors)),
     deletePeg: id => dispatch(deletePeg(id)),
     closeModal: () => dispatch(closeModal()),
-    // openModal: modal => dispatch(openModal(modal)),
   };
 };
 

@@ -7,7 +7,6 @@ import {  Link, withRouter } from 'react-router-dom';
 class PegsSpecialComponent extends React.Component {
   constructor (props) {
     super(props);
-    console.log("props",props);
   }
 
   componentDidMount(){

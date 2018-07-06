@@ -6,7 +6,6 @@ import { requestOneBoard } from './../../actions/board_actions';
 import { closeModal } from './../../actions/modal_actions';
 
 const mapStateToProps = (state,ownProps) => {
-  console.log("indexpageownprops",ownProps);
   return ({
     pegs: Object.values(state.entities.pegs) || [],
     currentUser: state.entities.users[state.session.id]

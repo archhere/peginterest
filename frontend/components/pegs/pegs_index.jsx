@@ -11,7 +11,6 @@ import { ProtectedRoute } from '../../util/route_util';
 class PegsIndex extends React.Component {
   constructor (props) {
     super(props);
-    console.log("props",props);
     this.state = {
       end: 10,
     };
