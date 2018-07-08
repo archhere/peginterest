@@ -35,10 +35,6 @@ update(e){
   }
 
 
-  componentDidUpdate(){
-    console.log("boardwasupdated");
-  }
-
   handleSubmit(e){
     e.preventDefault();
     this.props.updateBoard(this.state).then(this.props.closeModal()).then(()=>this.props.history.push(`/user/${this.props.currentUser.id}`));

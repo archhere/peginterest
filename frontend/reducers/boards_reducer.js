@@ -16,11 +16,9 @@ const boardsReducer = (state={},action) => {
       let value = Object.values(action.payload.board)[0];
       return merge({},state,{[id]: value});
     case REMOVE_BOARD:
-      console.log(Object.values(action.id.board)[0]);
       let delete_id = Object.values(action.id.board)[0].id;
       const newState = merge({},state);
       delete newState[delete_id];
-      console.log(newState);
       return newState;
     default:
       return state;

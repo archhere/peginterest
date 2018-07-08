@@ -28,12 +28,7 @@ update(e){
     });
   }
 
-  componentDidUpdate(){
-    console.log("boardwascreated");
-  }
-
   handleSubmit(e){
-    console.log(this.props);
     e.preventDefault();
     this.props.createBoard(this.state).then(this.props.closeModal());
   }

@@ -8,13 +8,7 @@ import { REMOVE_PEG, RECEIVE_SINGLE_PEG } from './../actions/peg_actions';
 const usersReducer = (state={},action) => {
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
-      return merge({},state,{[action.currentUser.id]: action.currentUser});
-    // case RECEIVE_SINGLE_BOARD:
-    //   console.log(state);
-    //     let user_id = action.payload.board.author_id;
-    //     let newState = merge({},state);
-    //     console.log(action);
-    //     console.log(newState);
+      return merge({},state,{[action.currentUser.id]: action.currentUser});x
     default:
       return state;
   }

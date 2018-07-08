@@ -1,0 +1,1605 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 4, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boardindexpage {
+  display: grid;
+  width: inherit;
+}
+
+/* line 10, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boardinfor1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  padding: 3px;
+}
+
+/* line 19, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boardindexpage li {
+  list-style: none;
+}
+
+/* line 24, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boardinfo12 {
+  position: relative;
+  margin-top: 210px;
+  text-align: left;
+  color: #555;
+  font-size: 18px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  font-family: "Roboto";
+}
+
+/* line 40, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boardinfo123 {
+  padding-right: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  margin-right: 20px;
+  height: 200px;
+  width: 301px;
+  margin-bottom: 40px;
+}
+
+/* line 52, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boards22 {
+  color: #555;
+  position: absolute;
+  left: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -.4px;
+  font-family: 'Roboto';
+}
+
+/* line 62, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+#addboard {
+  display: flex;
+  background-color: #bd081c;
+  background-size: contain;
+  box-shadow: 0 0 0px 10px #bd081c;
+  border-radius: 50%;
+  color: #efefef;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 90px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 82, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boardinfo123:hover {
+  border-radius: 8px;
+  cursor: zoom-in;
+  box-shadow: 0 0 0px 5px #f1f1f1;
+}
+
+/* line 88, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+#CreateBoardForm {
+  background: white;
+  height: 290px;
+  width: 600px;
+  position: absolute;
+  top: -300px;
+  right: -340px;
+  border-radius: 15px;
+}
+
+/* line 98, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+#EditBoardForm {
+  background: white;
+  height: 290px;
+  width: 600px;
+  position: absolute;
+  top: -300px;
+  right: -340px;
+  border-radius: 15px;
+}
+
+/* line 108, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boardtitle1 {
+  color: red;
+  position: relative;
+  left: 100px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+/* line 122, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.boardtitle1 input {
+  margin-top: 5px;
+  padding: 5px;
+  margin-left: 40px;
+  width: 40%;
+  height: 30px;
+  font-family: 'Roboto';
+  color: #555;
+  border-radius: 3px;
+}
+
+/* line 133, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.submit-create-button12 {
+  position: absolute;
+  align-content: center;
+  left: 500px;
+  top: 240px;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 151, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.submit-cancel-button1 {
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  position: absolute;
+  top: 242px;
+  left: 410px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 168, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/board.scss */
+.submit-delete-button12 {
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  position: absolute;
+  top: 242px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 1, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/modal.scss */
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+  z-index: 10;
+}
+
+/* line 11, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/modal.scss */
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 3, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.header-group li {
+  list-style: none;
+}
+
+/* line 7, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.profilelogout {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  right: 40px;
+}
+
+/* line 15, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.searchbarouter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 10px;
+}
+
+/* line 22, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.search i {
+  position: relative;
+  top: 14px;
+  left: 80px;
+  color: lightgray;
+}
+
+/* line 29, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.searchbar {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+  height: 80%;
+  max-height: 40px;
+  position: absolute;
+  padding: 0 40px 0 52px;
+  width: 50vw;
+  top: 40px;
+  left: 120px;
+  text-transform: none;
+}
+
+/* line 48, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.nav_link {
+  position: relative;
+  margin-left: 4px;
+  /* right: 8px; */
+  text-decoration: none;
+  color: #555;
+  left: 101%;
+  bottom: 12px;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+/* line 63, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.profile-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  /* margin-top: 10px; */
+  /* left: 950px; */
+  margin-top: 16px;
+}
+
+/* line 72, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.profile-link ul {
+  text-decoration: none;
+}
+
+/* line 76, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.profile-link-outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  position: relative;
+  right: 120px;
+}
+
+/* line 84, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.profile-link-outer Link:hover {
+  background: #f1f1f1;
+}
+
+/* .profile-link :hover{
+  background: #f1f1f1;
+  /* border: 1px solid #f1f1f1;
+  box-shadow: 0 0 0px 10px #f1f1f1; */
+/* line 96, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.header-button:hover {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+
+/* line 102, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.userimg i {
+  position: relative;
+  bottom: 2%;
+  color: lightgray;
+  color: #3477e5;
+  background-color: #b0c9f2;
+  border: 4px solid #b0c9f2;
+  border-radius: 100%;
+}
+
+/* line 112, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.userimg img {
+  position: relative;
+  background: #f1f1f1;
+  /* border: 1px solid lightgray; */
+  border-radius: 100%;
+}
+
+/* line 119, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.header-button {
+  color: #555;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  font-family: 'Roboto';
+  cursor: pointer;
+  background-color: white;
+  border: 0px;
+  height: 36px;
+  border-radius: 4px;
+  margin-top: 35px;
+  position: relative;
+  /* margin-right: 220%; */
+  font-weight: 700;
+}
+
+/* line 137, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.header-group img {
+  position: relative;
+  left: 0px;
+  height: 40px;
+  width: 40px;
+  top: 17px;
+}
+
+/* line 147, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.header-group {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  /* box-sizing: border-box; */
+  margin: 10px;
+  width: inherit;
+  padding-bottom: 8px;
+}
+
+/* line 160, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/navbar.scss */
+.searchandlogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 7, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  background: white;
+  border-radius: 8px;
+}
+
+/* line 18, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform1236 {
+  width: 600px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid gray;
+  background: white;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* line 29, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.outeraddpeg {
+  position: absolute;
+  border-radius: 10px;
+  margin-top: 34px;
+  background-color: lightgray;
+  width: 230px;
+  height: 180px;
+}
+
+/* line 38, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+#addpeg {
+  background-color: #bd081c;
+  background-size: contain;
+  box-shadow: 0 0 0px 10px #bd081c;
+  border-radius: 50%;
+  color: #efefef;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 110px;
+  top: 80px;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 53, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.outeraddpeg:hover {
+  background: lightgray;
+  cursor: zoom-in;
+  box-shadow: 0 0 0px 10px #f1f1f1;
+}
+
+/* line 63, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform li {
+  list-style-type: none;
+  display: block;
+}
+
+/* line 68, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.superheader {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* line 72, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.superimg {
+  border-right: 1px solid #f1f1f1;
+  width: 60%;
+  height: 85%;
+}
+
+/* line 79, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.superimg55 {
+  margin-right: 250px;
+  border-right: 1px solid #f1f1f1;
+  height: 87%;
+}
+
+/* line 85, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.superimg55 img {
+  margin-top: 70px;
+  margin-left: 47px;
+  width: 250px;
+  height: 250px;
+}
+
+/* line 94, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.boardinfo1234 {
+  position: relative;
+  bottom: 300px;
+  left: 380px;
+}
+
+/* line 103, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.boardinfo1234 span {
+  margin-left: 30px;
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: right;
+  font-size: 14px;
+  letter-spacing: -.3px;
+  line-height: 23px;
+  word-spacing: -1.3px;
+  font-weight: 700;
+}
+
+/* line 117, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+#addboard11 {
+  display: flex;
+  background-color: #bd081c;
+  background-size: cover;
+  box-shadow: 0 0 0px 6px #bd081c;
+  border-radius: 50%;
+  color: #efefef;
+  width: 20px;
+  height: 20px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+/* line 131, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.boardandstuff12 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 500px;
+}
+
+/* line 140, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform img {
+  max-height: 250px;
+  width: 250px;
+  margin-left: 49px;
+  margin-top: 56px;
+  padding: 5px;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+/* line 154, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.superboard {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 400px;
+  left: 330px;
+}
+
+/* line 163, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.superboard li {
+  list-style: none;
+}
+
+/* line 168, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.superboard li input {
+  border: none;
+  color: #555;
+  padding-top: 7px;
+  word-wrap: break-word;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* line 185, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.superboard li input:hover {
+  background-color: lightgray;
+}
+
+/* line 189, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform h3 {
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: right;
+  font-size: 21px;
+  letter-spacing: -.3px;
+  line-height: 23px;
+  word-spacing: -1.3px;
+  font-weight: 700;
+  padding-right: 100px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 203, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveform1236 h3 {
+  display: absolute;
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: right;
+  font-size: 21px;
+  letter-spacing: -.3px;
+  line-height: 23px;
+  word-spacing: -1.3px;
+  font-weight: 700;
+  padding-right: 100px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 223, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-container div img {
+  width: 230px;
+  max-height: 500px;
+  margin-top: -1px;
+  padding-bottom: 3px;
+  border-radius: 8px;
+  border: lightgray;
+}
+
+/* line 233, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.masonry:hover {
+  cursor: zoom-in;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px;
+  margin: -10px;
+  height: 60%;
+  width: 100%;
+}
+
+/* line 248, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.index-image:hover div.peg-save {
+  opacity: 1;
+}
+
+/* line 254, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+div.peg-save {
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  background-color: #bd081c;
+  position: relative;
+  left: 150px;
+  top: 42px;
+  color: white;
+  width: 70px;
+  text-align: center;
+  height: 25px;
+  padding-top: 11px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* line 294, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.masonry {
+  width: 236px;
+}
+
+/* line 298, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-container div span {
+  font-family: 'Roboto';
+  margin-left: 10px;
+  color: #555;
+  font-size: 14px;
+  hyphens: auto;
+  word-wrap: break-word;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+}
+
+/* line 310, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.profilelogout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 316, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.save {
+  display: inline;
+}
+
+/* line 321, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-container li {
+  list-style-type: none;
+  padding-bottom: 8px;
+}
+
+/* line 326, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 300px;
+}
+
+/* line 334, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.pegs-index {
+  display: grid;
+}
+
+/* line 339, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.peg-show {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  padding-right: 40px;
+  background: white;
+  display: flex;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  height: 650px;
+  width: 40%;
+  text-overflow: clip;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 357, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.peg-show li {
+  list-style-type: none;
+  position: absolute;
+  word-wrap: break-word;
+}
+
+/* line 364, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.userimg123 img {
+  position: relative;
+  background: #f1f1f1;
+  /* border: 1px solid lightgray; */
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  right: 320%;
+  top: 30px;
+}
+
+/* line 375, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.title {
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: -.3px;
+  line-height: 23px;
+  word-spacing: -1.3px;
+  font-weight: 700;
+  top: 50%;
+}
+
+/* line 390, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.author {
+  top: 600px;
+  left: 60px;
+  word-wrap: break-word;
+  font-family: Helvetica;
+  color: #211922;
+  margin-top: 15%;
+}
+
+/* line 402, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.author span {
+  font-weight: 700;
+}
+
+/* line 408, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.box101 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: none;
+  height: 70vh;
+  width: 50vw;
+  top: 100px;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  text-overflow: clip;
+  font-family: Helvetica, sans-serif;
+}
+
+/* line 427, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.image101 {
+  display: inline-block;
+  vertical-align: top;
+  max-height: 50vh;
+  width: 40vw;
+  margin-top: -10px;
+  right: 60%;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+/* line 441, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.divshow {
+  background: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+/* line 451, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.saveedit101 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 460, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.author102 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  right: 10px;
+  font-family: Helvetica;
+  color: #211922;
+  top: 10%;
+}
+
+/* line 477, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.savebutton {
+  height: 43px;
+  cursor: pointer;
+  position: relative;
+  width: 80.64px;
+  z-index: 7;
+}
+
+/* line 488, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.editbutton1011 {
+  display: flex;
+  margin-left: 10px;
+  margin-top: -20px;
+}
+
+/* line 497, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.title102 {
+  display: flex;
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: -.3px;
+  line-height: 23px;
+  word-spacing: -1.3px;
+  font-weight: 700;
+  position: relative;
+  left: 10%;
+  bottom: 5%;
+  width: 100%;
+}
+
+/* line 517, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.savebutton1011 {
+  display: flex;
+  margin-right: 10px;
+}
+
+/* line 522, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.link {
+  position: absolute;
+  bottom: 540px;
+  left: 200px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* line 535, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.link:hover {
+  border: 1px solid lightgray;
+  box-shadow: 0 0 0px 5px #lightgray;
+  border-radius: 15px;
+  background-size: 120% 120%;
+  background-color: rgba(0, 0, 0, 0.15);
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+}
+
+/* line 545, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.link Link {
+  color: #555;
+  font-family: 'Roboto';
+}
+
+/* line 552, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.editbutton {
+  height: 18.34px;
+  cursor: pointer;
+  position: absolute;
+  width: 18.34px;
+  z-index: 7;
+}
+
+/* line 563, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.editbutton:hover {
+  background: #f1f1f1;
+  box-shadow: inset 0 0 10px #f1f1f1;
+  border-radius: 50%;
+}
+
+/* line 569, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.addItem {
+  position: fixed;
+  z-index: 5;
+  float: right;
+  bottom: 50px;
+  right: 50px;
+  width: 39px;
+  height: 39px;
+  cursor: pointer;
+}
+
+/* line 580, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.addItem:hover {
+  filter: brightness(90%);
+}
+
+/* line 584, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+#CreatePegForm {
+  background: white;
+  height: 600px;
+  width: 700px;
+  position: absolute;
+  top: -300px;
+  right: -340px;
+  border-radius: 15px;
+}
+
+/* line 594, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.close-modal {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: #b5b5b5;
+  cursor: pointer;
+  font-family: Helvetica;
+  font-size: 21px;
+}
+
+/* line 604, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-header {
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 21px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+  font-weight: 700;
+  position: relative;
+  right: 15px;
+  top: 10px;
+}
+
+/* line 619, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-header123 {
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  font-weight: 700;
+  position: relative;
+  right: 15px;
+  top: 10px;
+}
+
+/* line 634, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.create-peg-header-outer {
+  border-bottom: 1px solid #f1f1f1;
+  height: 50;
+}
+
+/* line 640, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.dropzone-text-container {
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+  font-weight: 700;
+  position: relative;
+  top: 40%;
+  word-wrap: break-word;
+}
+
+/* line 657, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.website {
+  color: red;
+  position: relative;
+  left: 370px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+/* line 670, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.website input {
+  margin-top: 5px;
+  width: 40%;
+  height: 30px;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  color: #555;
+  font-size: 14px;
+}
+
+/* line 681, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.titleform {
+  position: relative;
+  color: red;
+  left: 370px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+/* line 694, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.titleform input {
+  margin-top: 5px;
+  width: 40%;
+  height: 30px;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  color: #555;
+  font-size: 14px;
+}
+
+/* line 704, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.formdescp {
+  position: relative;
+  left: 370px;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+/* line 716, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.formdescp textarea {
+  margin-top: 5px;
+  width: 40%;
+  height: 166px;
+  color: #f1f1f1;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  color: #555;
+  font-size: 14px;
+}
+
+/* line 727, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.website78 {
+  color: red;
+  position: relative;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+/* line 740, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.website78 input {
+  margin-top: 5px;
+  width: 220%;
+  height: 30px;
+  border-radius: 3px;
+  letter-spacing: -.4px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #555;
+  font-family: 'Roboto';
+  background-color: #f1f1f1;
+}
+
+/* line 754, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.titleform78 {
+  position: relative;
+  color: red;
+  font-family: 'Roboto';
+  color: #555;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  word-spacing: -1.3px;
+}
+
+/* line 767, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.titleform78 input {
+  margin-top: 5px;
+  width: 220%;
+  height: 30px;
+  border-radius: 3px;
+  letter-spacing: -.4px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 16px;
+  color: #555;
+  font-family: 'Roboto';
+  background-color: #f1f1f1;
+}
+
+/* line 783, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.dropzone {
+  position: absolute;
+  height: 367px;
+  width: 30%;
+  left: 10%;
+  border-radius: 15px;
+  border: 1px dashed lightgray;
+  position: relative;
+  top: -350px;
+}
+
+/* line 795, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.submit-create-button {
+  position: absolute;
+  align-content: center;
+  left: 600px;
+  bottom: 50px;
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 814, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.submit-create-buttonawesome {
+  position: absolute;
+  align-content: center;
+  left: 600px;
+  bottom: 50px;
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: #bd081c;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 832, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.submit-create-button123 {
+  align-content: center;
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  position: relative;
+  bottom: 75px;
+  left: 30px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 852, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.picturethumbnail {
+  top: 60px;
+  margin-left: 25px;
+}
+
+/* line 858, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.pencil {
+  color: red;
+}
+
+/* line 863, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.edit-peg-form {
+  background: white;
+  height: 500px;
+  width: 700px;
+  position: absolute;
+  top: -300px;
+  right: -340px;
+  border-radius: 15px;
+}
+
+/* line 873, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.edit-peg-header-outer {
+  border-bottom: 1px solid lightgray;
+}
+
+/* line 877, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.edit-peg-header {
+  text-align: center;
+  color: #555;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 887, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.thumbnail {
+  margin-left: 10px;
+  position: absolute;
+  bottom: 280px;
+  left: 20px;
+  padding-top: 20px;
+}
+
+/* line 895, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.thumbnail12 {
+  margin-right: 400px;
+  position: relative;
+  bottom: 200px;
+}
+
+/* line 908, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.submitouterdiv {
+  display: flex;
+}
+
+/* line 914, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.editform12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 300px;
+}
+
+/* line 923, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.submits123 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 53px;
+  margin-left: 500px;
+}
+
+/* line 932, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.submit-edit-button12 {
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: #ad081b;
+  font-weight: 700;
+  position: relative;
+  bottom: 20px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 950, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.submit-cancel-button126 {
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background-color: lightgray;
+  font-weight: 700;
+  position: relative;
+  left: 5px;
+  bottom: 20px;
+  margin-right: 20px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/* line 969, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.submits123 li {
+  list-style: none;
+}
+
+/* line 973, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.boardpeg34 {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 983, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.boardpeg3456 {
+  display: flex;
+  justify-content: center;
+  height: 0px;
+}
+
+/* line 989, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.val12 {
+  margin-left: 5px;
+}
+
+/* line 993, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.boardpeg34 h3 {
+  color: #555;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: -1.25px;
+  line-height: 42px;
+  word-spacing: -2.25px;
+  width: 75%;
+  max-width: 860px;
+}
+
+/* line 1004, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/pegs.scss */
+.imgthumbnail {
+  margin-top: 10px;
+}
+
+/* line 1, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.login-form-container {
+  color: black;
+  width: 400px;
+  min-height: 533px;
+  /* border: 5px solid black; */
+  align-self: center;
+  padding-top: 25px;
+  background: white;
+  border: 3px;
+}
+
+/* line 14, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.outersessionpage {
+  background: url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
+  background-size: cover;
+  width: 100%;
+  margin: 0 auto;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 29, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.login-form-container p {
+  font-family: Roboto;
+  opacity: 1;
+  z-index: 5;
+  font-weight: 700;
+  font-size: 28px;
+  color: #555555;
+  text-align: center;
+  background: white;
+}
+
+/* line 40, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.login-form-container span {
+  font-family: Roboto;
+  color: #cccccc;
+  font-size: 18px;
+  position: relative;
+}
+
+/* line 47, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.logo {
+  height: 40px;
+  width: 40px;
+  padding-top: 10px;
+  position: relative;
+  bottom: -20%;
+  left: 45%;
+}
+
+/* line 56, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.login-input {
+  display: flex;
+  width: 63%;
+  margin: 5px auto;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  opacity: .5;
+  font-size: 15px;
+}
+
+/* line 67, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.session-submit {
+  color: white;
+  width: 268px;
+  margin-left: 65px;
+  padding: 0px 18px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin-top: 0px;
+  background-color: #bd081c;
+  border: 0px;
+  height: 36px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* line 86, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.demo-submit {
+  color: white;
+  width: 268px;
+  margin-left: 16.2%;
+  fpadding: 0px 18px;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #bd081c;
+  border: 0px;
+  height: 36px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* line 105, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.demo-submit:hover {
+  left: 150%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+}
+
+/* line 117, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.somelink {
+  text-decoration: none;
+  color: #555555;
+}
+
+/* line 121, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.fromtype-button {
+  text-decoration: none;
+  margin-left: 36.5%;
+  margin-top: 4%;
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  box-shadow: none;
+  cursor: pointer;
+  height: 36px;
+  display: inline-block;
+}
+
+/* line 144, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/session_form.scss */
+.errors {
+  position: relative;
+  list-style: none;
+  color: orange;
+}
+
+/* line 1, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.boards {
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 450px;
+  top: 100px;
+}
+
+/* .boards li div li{
+  position: relative;
+  top: 50px;
+
+} */
+/* line 17, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.boardtitle {
+  position: relative;
+  top: 220px;
+  right: 10px;
+  font-family: Helvetica, sans-serif;
+  color: #555;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: -.3px;
+  line-height: 23px;
+  word-spacing: -1.3px;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+/* line 32, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.profilelist {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+/* line 38, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.profilelist button {
+  list-style: none;
+  position: absolute;
+}
+
+/* line 43, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.boardbutton {
+  left: 40%;
+  bottom: 0;
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* line 59, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.boardbutton:hover {
+  background-color: lightgray;
+}
+
+/* line 63, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.pegbutton:hover {
+  background-color: lightgray;
+}
+
+/* line 67, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.pegbutton {
+  left: 70%;
+  bottom: 0;
+  border: none;
+  line-height: 1.2;
+  letter-spacing: -.4px;
+  color: #555;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+/* line 84, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.profileheader {
+  position: relative;
+  bottom: 600;
+  left: 18%;
+  font-size: 36px;
+  font-family: 'Roboto';
+  color: #555;
+}
+
+/* line 93, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.outer {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  width: 301px;
+  height: 200px;
+  margin-right: 20px;
+  list-style: none;
+  /* box-sizing: border-box; */
+}
+
+/* line 104, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.outer:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 0 0px 10px #f1f1f1;
+}
+
+/* line 110, /Users/pramacha/Archana/App academy submitted final projects/fullstackproject/peginterest/app/assets/stylesheets/api/user.scss */
+.changes {
+  /* background: red; */
+  margin-top: 250px;
+}
