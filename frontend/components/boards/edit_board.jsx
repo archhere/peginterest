@@ -15,8 +15,6 @@ class EditBoard extends React.Component {
 
   }
 
-
-
   renderErrors() {
     return(
       <ul>
@@ -49,7 +47,8 @@ update(e){
     return (
       <div>
       <form id="EditBoardForm"  onSubmit={this.handleSubmit.bind(this)} className="create-peg-form">
-        <div className="create-peg-header-outer"><h3 className="create-peg-header123">Edit Board</h3></div><br/>
+        <div className="create-peg-header-outer">
+          <h3 className="create-peg-header123">Edit Board</h3></div><br/>
         <p>{this.renderErrors()}</p>
         <span class="close-modal" onClick={() => this.props.closeModal()}>X</span>
         <label className="boardtitle1"><span>Name</span>
