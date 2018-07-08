@@ -5,11 +5,23 @@ export const RECEIVE_SINGLE_BOARD = "RECEIVE_SINGLE_BOARD";
 export const REMOVE_BOARD = "REMOVE_BOARD";
 export const RECEIVE_BOARD_ERRORS = "RECEIVE_BOARD_ERRORS";
 export const CLEAR_BOARD_ERRORS = "CLEAR_BOARD_ERRORS";
+export const RECEIVE_BOARDSPEGS = "RECEIVE_BOARDPEGS";
+export const RECEIVE_BOARDPEGS = "RECEIVE_BOARDPEG";
 
 export const requestAllBoards = () => dispatch => {
   return boardAPIUtil.fetchBoards()
   .then(response => dispatch({type: RECEIVE_BOARDS,payload: response}));
   };
+
+export const requestAllBoardPegs = () => dispatch => {
+  return boardAPIUtil.fetchBoards()
+  .then(response => dispatch({type: RECEIVE_BOARDSPEGS,payload: response}));
+};
+
+export const requestBoardPeg = (id) => dispatch => {
+  return boardAPIUtil.fetchBoard(id)
+  .then(response => dispatch({type: RECEIVE_BOARDPEGS,payload: response}));
+};
 
 export const requestOneBoard = (id) => dispatch => {
   return boardAPIUtil.fetchBoard(id)

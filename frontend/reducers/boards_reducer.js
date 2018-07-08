@@ -7,9 +7,7 @@ const boardsReducer = (state={},action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_BOARDS:
-      if (action.payload.boards === undefined) {
-        return state;
-      }
+      if (action.payload.boards === undefined) return {};
       return action.payload.boards;
     case RECEIVE_SINGLE_BOARD:
       let id = Object.values(action.payload.board)[0].id;

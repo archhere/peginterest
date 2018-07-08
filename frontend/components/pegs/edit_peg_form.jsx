@@ -44,7 +44,7 @@ class EditPegForm extends React.Component{
     }
 
     handleclick(e){
-      this.props.deletePeg(this.state.id).then(this.props.closeModal());
+      this.props.deletePeg(this.state.id).then(this.props.closeModal()).then(this.props.history.goBack());
     }
 
 

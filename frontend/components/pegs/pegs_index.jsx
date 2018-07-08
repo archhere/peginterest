@@ -24,6 +24,12 @@ class PegsIndex extends React.Component {
     this.props.requestAllPegs();
   }
 
+  componentDidUpdate(prevProps,prevState){
+    if (prevProps.pegs.length !== this.props.pegs.length){
+      this.props.requestAllPegs();
+    }
+  }
+
   infiniteScroll() {
     $(window).scroll( function() {
       if ($(window).scrollTop() <= $(document).height() - $(window).height() && $(window).scrollTop() >= $(document).height() - $(window).height() - 50) {
