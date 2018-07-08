@@ -3,9 +3,9 @@ import { closeModal } from './../../actions/modal_actions';
 import CreateBoard from './create_board';
 import { createBoard,receiveBoardErrors } from './../../actions/board_actions';
 import { openModal } from '../../actions/modal_actions';
+import {  Link, withRouter } from 'react-router-dom';
 
-
-const mapStateToProps = (state) => {
+const mapStateToProps = (state,ownProps) => {
   return {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.boards,
@@ -21,7 +21,7 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect (
+export default withRouter (connect (
   mapStateToProps,
   mapDispatchToProps
-)(CreateBoard);
+)(CreateBoard));

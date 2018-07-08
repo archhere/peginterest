@@ -4,14 +4,18 @@ import {  Link, withRouter } from 'react-router-dom';
 class EditBoard extends React.Component {
   constructor (props) {
     super(props);
-    
+
     this.state = {
       title: this.props.board.title,
       id: this.props.board.id,
       author_id: this.props.board.author_id
     };
 
+    this.handleclick = this.handleclick.bind(this);
+
   }
+
+
 
   renderErrors() {
     return(
@@ -30,9 +34,19 @@ update(e){
     });
   }
 
+
+  componentDidUpdate(){
+    console.log("boardwasupdated");
+  }
+
   handleSubmit(e){
     e.preventDefault();
-    this.props.updateBoard(this.state).then(this.props.closeModal());
+    this.props.updateBoard(this.state).then(this.props.closeModal()).then(()=>this.props.history.push(`/user/${this.props.currentUser.id}`));
+  }
+
+  handleclick(e){
+    this.props.deleteBoard(this.state.id).then(this.props.closeModal())
+    .then(this.props.history.push(`/user/${this.props.currentUser.id}`));
   }
 
   render(){
@@ -49,6 +63,7 @@ update(e){
         <div className="submitouterdiv">
         <input className="submit-create-button12" type="submit" value='Update' /></div>
         <button className="submit-cancel-button1" onClick={() => this.props.closeModal()}>Cancel</button>
+        <button onClick={this.handleclick} className="submit-delete-button12">Delete</button>
         </form>
       </div>
 

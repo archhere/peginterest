@@ -20,16 +20,20 @@ class SavePegForm extends React.Component {
     };
   }
 
-
-  componentDidUpdate() {
-    const peg = this.state;
-    this.props.createPeg(peg).then(() => this.props.closeModal());
+  componentDidMount(){
+    this.props.requestAllBoards();
   }
 
 
+  componentDidUpdate(prevProps, prevState) {
+    const peg = this.state;
+    if (peg.board_id !== "" && prevState !== this.state){
+      this.props.createPeg(peg).then(() => this.props.closeModal());
+    }
+  }
+
   render(){
-    const boards = Object.values(this.props.currentUser.boards || {});
-    console.log(boards);
+    const boards = this.props.boards;
     return (
       <div className="saveform1236">
         <div className="superheader">

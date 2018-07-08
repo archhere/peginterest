@@ -7,12 +7,20 @@ const boardsReducer = (state={},action) => {
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_BOARDS:
+      if (action.payload.boards === undefined) {
+        return state;
+      }
       return action.payload.boards;
     case RECEIVE_SINGLE_BOARD:
-      return merge({},state,{[action.board.id]: action.payload.board });
+      let id = Object.values(action.payload.board)[0].id;
+      let value = Object.values(action.payload.board)[0];
+      return merge({},state,{[id]: value});
     case REMOVE_BOARD:
+      console.log(Object.values(action.id.board)[0]);
+      let delete_id = Object.values(action.id.board)[0].id;
       const newState = merge({},state);
-      delete newState[action.id];
+      delete newState[delete_id];
+      console.log(newState);
       return newState;
     default:
       return state;

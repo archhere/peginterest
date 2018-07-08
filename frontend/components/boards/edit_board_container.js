@@ -7,11 +7,16 @@ import {  Link, withRouter } from 'react-router-dom';
 
 
 const mapStateToProps = (state,ownProps) => {
-  
+  console.log(state);
+  console.log(ownProps);
+  console.log(ownProps.location.pathname[15,16]);
+  let location = ownProps.location.pathname.slice(15);
+  let path = location.replace(/\/pegs/g,'');
+  console.log(path);
   return {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.boards,
-    board: state.entities.boards[ownProps.location.pathname[15]]
+    board: state.entities.boards[path]
   };
 };
 

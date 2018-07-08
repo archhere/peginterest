@@ -32,10 +32,10 @@ export const clearBoardErrors = () => ({
 
 export const createBoard = (board) => (dispatch) => {
   return boardAPIUtil.createBoard(board)
-  .then(response => dispatch({type: RECEIVE_SINGLE_BOARD,board: response}));
+  .then(response => dispatch({type: RECEIVE_SINGLE_BOARD,payload: response}));
 };
 
 export const updateBoard = (board) => (dispatch) => {
   return boardAPIUtil.updateBoard(board)
-  .then(response => dispatch({type: RECEIVE_SINGLE_BOARD,board: response}));
+  .then(response => dispatch({type: RECEIVE_SINGLE_BOARD,payload: response}));
 };

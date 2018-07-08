@@ -15,10 +15,14 @@ class BoardIndexComponent extends React.Component {
     this.props.requestAllBoards();
   }
 
-
+  componentDidUpdate(prevProps,prevState){
+    if (prevProps.boards.length !== this.props.boards.length){
+      this.props.requestAllBoards();
+    }
+  }
 
   render(){
-    
+
 
     return (
       <div className="boardindexpage">

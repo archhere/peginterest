@@ -4,7 +4,7 @@ import {  Link, withRouter } from 'react-router-dom';
 class CreateBoard extends React.Component {
   constructor (props) {
     super(props);
-    
+
     this.state = {
       title: "",
     };
@@ -28,7 +28,12 @@ update(e){
     });
   }
 
+  componentDidUpdate(){
+    console.log("boardwascreated");
+  }
+
   handleSubmit(e){
+    console.log(this.props);
     e.preventDefault();
     this.props.createBoard(this.state).then(this.props.closeModal());
   }
