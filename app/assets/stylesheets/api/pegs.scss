@@ -87,7 +87,7 @@
   margin-left: 47px;
   width: 250px;
   height: 250px;
-  
+
 }
 
 
@@ -295,6 +295,19 @@ div.peg-save {
   width: 236px;
 }
 
+.create-peg-container{
+display: flex;
+
+}
+
+.create-peg-internal-div{
+  width: 5%;
+}
+
+.create-peg-internal-div1{
+  width: 0%;
+}
+
 .create-peg-container div span{
   font-family: 'Roboto';
   margin-left: 10px;
@@ -332,8 +345,12 @@ div.peg-save {
 
 
 .pegs-index{
-  display: grid;
-  // width: 100px;
+  // display: grid;
+  width: 95%;
+}
+
+.pegs-index1{
+  width: 100%;
 }
 
 .peg-show{

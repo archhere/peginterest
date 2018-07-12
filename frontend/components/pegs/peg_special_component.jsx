@@ -38,7 +38,8 @@ class PegsSpecialComponent extends React.Component {
     return (
 
       <div class='create-peg-container'>
-        <Masonry className={"pegs-index"}
+        <div className='create-peg-internal-div1'></div>
+        <Masonry className={"pegs-index1"}
           elementType={'ul'}
           options={masonryOptions}
           disableImagesLoaded={false}

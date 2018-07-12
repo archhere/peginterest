@@ -5,17 +5,22 @@ import { updateBoard,receiveBoardErrors,deleteBoard} from './../../actions/board
 import { openModal } from '../../actions/modal_actions';
 import {  Link, withRouter } from 'react-router-dom';
 import { deletePeg } from './../../actions/peg_actions';
+import { createBoard,requestAllBoardPegs,requestBoardPeg } from './../../actions/board_actions';
 
 
 const mapStateToProps = (state,ownProps) => {
   let location = ownProps.location.pathname.slice(15);
-  let pegs = Object.values(state.entities.pegs);
+  console.log(state);
+  let pegs = Object.values(state.entities.boardpegs);
   let path = location.replace(/\/pegs/g,'');
+  console.log("path",path.slice(1));
+  console.log(ownProps);
+  console.log(pegs);
   let boardpegs = pegs.filter(peg => peg.board_id == path);
   return {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.boards,
-    board: state.entities.boards[path],
+    board: state.entities.boards[path.slice(1)],
     pegs: boardpegs
   };
 };
@@ -28,6 +33,7 @@ const mapDispatchToProps = dispatch => {
     closeModal: () => dispatch(closeModal()),
     openModal: modal => dispatch(openModal(modal)),
     deletePeg: id => dispatch(deletePeg(id)),
+    requestAllBoardPegs: () => dispatch(requestAllBoardPegs()),
   };
 };
 

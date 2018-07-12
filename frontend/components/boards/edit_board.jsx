@@ -15,6 +15,12 @@ class EditBoard extends React.Component {
 
   }
 
+  componentDidMount(){
+
+      this.props.requestAllBoardPegs();
+    
+  }
+
   renderErrors() {
     return(
       <ul>

@@ -64,8 +64,9 @@ class PegsIndex extends React.Component {
     return(
 
         <div class='create-peg-container' onClick={ () => this.props.closeModal()}>
+          <div className='create-peg-internal-div'></div>
           <Masonry className={"pegs-index"}
-                elementType={'ul'}
+                elementType={'div'}
                 options={masonryOptions}
                 disableImagesLoaded={false}
                 updateOnEachImageLoad={false}
@@ -94,6 +95,7 @@ class PegsIndex extends React.Component {
 
             )}
           </Masonry>
+
         </div>
 
     );
