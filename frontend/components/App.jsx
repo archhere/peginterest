@@ -19,8 +19,6 @@ import PegsSpecialContainer from './pegs/peg_special_container';
 import UserShowContainer from './user/user_show_container';
 import Modal from './modal/modal';
 
-
-
 const App = () => {
 
   return (
