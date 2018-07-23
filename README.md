@@ -68,7 +68,6 @@ Users are able to upload images from their own devices onto the website. This us
 
 ![](https://res.cloudinary.com/archhere/image/upload/v1529101822/uploaded_images/Screen_Shot_2018-06-15_at_3.29.56_PM.png)
 
- Users are able to upload images from their own devices onto the website. This uses react-dropzone. Users can either click on the dropzone or drag their images to upload to the site. The uploaded images are automatically rendered onto the home page.
  
  ```javascript
  <Dropzone
