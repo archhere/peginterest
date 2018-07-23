@@ -92,7 +92,7 @@ let someclass;
 
     etc..
   ```
- Once image load is successful, the "Done" button changes colors.
+ Once image load is successful, the "Done" button turns green.
  
  
 
