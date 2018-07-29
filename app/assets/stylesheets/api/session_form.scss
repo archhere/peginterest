@@ -11,20 +11,76 @@
   border: 3px;
 }
 
+// .outersessionpage{
+//   background: url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
+//   // background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3)),
+//   //                 url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
+//   background-size: cover;
+//   // background-color: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+//   width: 100%;
+//   margin: 0 auto;
+//   // margin-top: -20px;
+//   height: 800px;
+//   display: flex;
+//   justify-content: center;
+//   // align-items: center;
+// }
+
 .outersessionpage{
-  background: url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
-  // background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3)),
-  //                 url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
-  background-size: cover;
-  // background-color: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
   width: 100%;
-  margin: 0 auto;
-  // margin-top: -20px;
-  height: 800px;
+    margin: 0 auto;
+    // margin-top: -20px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+  overflow: hidden;
+  height: 100vh;
   display: flex;
-  justify-content: center;
-  // align-items: center;
+  top: 0px;
+  background-color: rgba(95, 115, 160, 0.56);
+    // background: url("https://res.cloudinary.com/archhere/image/upload/v1530762885/macyjs-large-opt.png");
+    background: url("https://res.cloudinary.com/archhere/image/upload/v1532903781/peginterest.png");
+  background-size: cover;
+  // background-repeat: no-repeat;
+  -webkit-animation:200s scroll infinite linear;
+  -moz-animation:200s scroll infinite linear;
+  -o-animation:200s scroll infinite linear;
+  -ms-animation:200s scroll infinite linear;
+  animation:200s scroll infinite linear;
 }
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+    transform: translateY(-300px);
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
 
 .login-form-container p{
   font-family: Roboto;
@@ -147,4 +203,55 @@
   // left: 350px;
   // bottom: 240px;
   color: orange;
+}
+
+span.login-option-message {
+  color: rgb(85, 85, 85);
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 5px;
+  -webkit-font-smoothing: antialiased;
+}
+
+a.signup-link {
+  color: #717171;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px 6px 3px 6px;
+  margin-bottom: 3px;
+
+}
+
+a.login-link {
+  border: 0px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 4px;
+  -webkit-font-smoothing: antialiased;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  background-color: rgb(235, 235, 235);
+  color: rgb(68, 68, 68);
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.session-option{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+
+}
+
+.small-border {
+  width: 110px;
+  border-bottom: #dedede 1px solid;
+  margin: 30px auto 13px auto;
 }

@@ -70,9 +70,16 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    let mssg;
     let placeholder_val;
-    if (this.props.formType === 'signup') placeholder_val = "Create a password"
-    else placeholder_val = "Password"
+    if (this.props.formType === 'signup') placeholder_val = "Create a password";
+    else placeholder_val = "Password";
+
+    if (this.props.navLink === <Link to="/signup" className="somelink">Sign up</Link>){
+      mssg = "Not Peginterested yet?";
+    } else {
+      mssg = "Already a member?";
+    }
     return (
       <div className = "outersessionpage">
       <div className="login-form-container">
@@ -103,7 +110,15 @@ class SessionForm extends React.Component {
            <input className="demo-submit"
              onClick={(e)=>this.demoLogin(e)} type="submit" value="Demo"/>
            <br/>
-         <div className='fromtype-button'>{this.props.navLink}</div>
+
+           <div className="small-border"> </div>
+            <div className="session-option">
+              <span className="login-option-message">{mssg}</span>
+              <br/>
+              {this.props.navLink}
+            </div>
+
+
         </form>
         <div className="errors">{this.renderErrors()}</div>
       </div>
