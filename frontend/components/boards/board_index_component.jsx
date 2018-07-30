@@ -33,12 +33,12 @@ class BoardIndexComponent extends React.Component {
 
   render(){
       let boardHash = {};
-      console.log(this.props.boardPegs);
+
       this.props.boards.forEach((board) => {
         let boardPegs = this.props.boardPegs.filter(peg => peg.peg.board_id === board.id);
         boardHash[board.id] = boardPegs;
       });
-      console.log(values(boardHash[81]).slice(0, 8));
+      
       const masonryOptions = {
        fitWidth: true,
        transitionDuration: 0
