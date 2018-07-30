@@ -72,14 +72,15 @@ class SessionForm extends React.Component {
   render() {
     let mssg;
     let placeholder_val;
-    if (this.props.formType === 'signup') placeholder_val = "Create a password";
-    else placeholder_val = "Password";
-
-    if (this.props.navLink === <Link to="/signup" className="somelink">Sign up</Link>){
-      mssg = "Not Peginterested yet?";
-    } else {
+    if (this.props.formType === 'signup') {
+      placeholder_val = "Create a password";
       mssg = "Already a member?";
     }
+    else {
+      placeholder_val = "Password";
+      mssg = "Not Peginterested yet?";
+    }
+    
     return (
       <div className = "outersessionpage">
       <div className="login-form-container">

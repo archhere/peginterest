@@ -214,11 +214,23 @@ span.login-option-message {
 }
 
 a.signup-link {
-  color: #717171;
-  text-decoration: none;
+  border: 0px;
+  height: 16px;
+  display: inline-block;
+  border-radius: 4px;
+  -webkit-font-smoothing: antialiased;
+  padding: 10px 20px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 2px 6px 3px 6px;
+  outline: none;
+  background-color: rgb(235, 235, 235);
+  color: rgb(68, 68, 68);
+  width: 120px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
   margin-bottom: 3px;
+  font-family: 'Roboto'
 
 }
 
@@ -239,6 +251,7 @@ a.login-link {
   text-align: center;
   cursor: pointer;
   margin-bottom: 3px;
+  font-family: 'Roboto'
 }
 
 .session-option{
