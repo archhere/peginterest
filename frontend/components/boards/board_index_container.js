@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { closeModal } from './../../actions/modal_actions';
 import { requestAllBoards,receiveBoardErrors,deleteBoard,
-  createBoard,updateBoard }
+  createBoard,updateBoard,requestAllBoardPegs }
 from './../../actions/board_actions';
 import BoardIndexComponent from './board_index_component';
 import { openModal } from '../../actions/modal_actions';
@@ -13,7 +13,8 @@ const mapStateToProps = (state,ownProps) => {
   return {
     currentUser: state.entities.users[state.session.id],
     errors: state.errors.boards,
-    boards: Object.values(state.entities.boards)
+    boards: Object.values(state.entities.boards),
+    boardPegs: Object.values(state.entities.boardpegs || {}),
   };
 };
 
@@ -24,7 +25,8 @@ const mapDispatchToProps = dispatch => {
     deleteBoard: id => dispatch(deleteBoard(id)),
     closeModal: () => dispatch(closeModal()),
     openModal: modal => dispatch(openModal(modal)),
-    requestAllBoards: () => dispatch(requestAllBoards())
+    requestAllBoards: () => dispatch(requestAllBoards()),
+    requestAllBoardPegs: () => dispatch(requestAllBoardPegs()),
   };
 };
 

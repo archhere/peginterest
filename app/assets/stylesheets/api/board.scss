@@ -69,9 +69,9 @@ font-family: 'Roboto'
   color: #efefef;
   width: 20px;
   height: 20px;
-  position: relative;
-  // left: 150px;
-  top: 90px;
+  // position: relative;
+  // // left: 150px;
+  // top: 90px;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -181,4 +181,67 @@ font-family: 'Roboto'
   left: 20px;
   padding: 10px;
   border-radius: 3px;
+}
+
+.pins-in-board-thumbnail-pic {
+  width: 50px;
+  max-height: 80px;
+  border-radius: 10px;
+  margin: 2px;
+  border: 1px solid lightgray;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+}
+
+.profile-boards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: transparent;
+  flex-direction: row;
+  margin-bottom: 100px;
+  margin-top:30px;
+}
+
+.user-profile-items {
+  position: relative;
+  background-color: transparent;
+  width: 100vw;
+  z-index: 1;
+}
+
+.board-index-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  text-align: center;
+  border: 1px solid #f1f1f1;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 5px;
+  width: 240px;
+  height: 240px;
+  color: #555;
+  background: #f1f1f1;
+}
+
+.board-index-item-container:hover{
+  // background: lightgray;
+  // border: 3px solid #f1f1f1;
+  // border-radius: 10px;
+  // background-size: 110% 110%;
+  cursor: pointer;
+
+  box-shadow: 0 0 0px 10px #f1f1f1;
+}
+
+.title12345{
+  margin-bottom: 5px;
+  font-family: "Roboto";
 }
